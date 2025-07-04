@@ -1,0 +1,378 @@
+{
+  "fr": {
+    "picture": {
+      "classic": "img/photo_cv.jpg",
+      "fantasy": "img/rodeur_fantasy_encre_remix.jpg",
+      "sci-fi": "img/space_marine_photorealiste_remix.jpg"
+    },
+    "jobs": {
+      "title": {
+        "classic": "Expériences professionnelles",
+        "fantasy": "Guildes antérieures",
+        "sci-fi": "Corporations passées"
+      },
+      "content": [
+        {
+          "year": "2024-2025",
+          "name": "STG-Induscabel",
+          "role": "IT Support Field Engineer",
+          "details": "Support informatique, amélioration de la communication entre les ERP, préparation de la migration des données vers un seul ERP, création de rapports et statistiques"
+        },
+        {
+          "year": "2014-2024",
+          "name": "Sanidel Namur S.A.",
+          "role": "Responsable des systèmes d’information",
+          "details": "Support informatique, mise à jour de la base de données des produits, création et gestion des catalogues et tarifs, mise en place et gestion des sites web."
+        },
+        {
+          "year": "2008-2014",
+          "name": "Sanidel S.A.",
+          "role": "Responsable des systèmes d’information",
+          "details": "Support informatique, mise à jour de la base de données des produits, création et gestion des catalogues et tarifs, mise en place et gestion des sites web."
+        }
+      ]
+    },
+    "education": {
+      "title":{
+        "classic":"Formations",
+        "fantasy":"Initiations académiques",
+        "sci-fi":"Formations"
+      },
+      "content": [
+        {
+          "year": "2006-2008",
+          "school": "ULiège",
+          "studies": "Licence en Histoire de l'art et archéologie, orientation Antiquité"
+        },
+        {
+          "year": "2002-2006",
+          "school": "ULiège",
+          "studies": "Master à finalité approfondie en Histoire de l'art et archéologie, orientation archéométrie"
+        }
+      ]
+    },
+    "achievements": {
+      "title":{
+        "classic": "Réalisations",
+        "fantasy": "Hauts-faits",
+        "sci-fi": "Accomplissements"
+      },
+      "content": [
+        {
+          "year": "2008-2025",
+          "name": {
+            "classic": "ERP - Mercator",
+            "fantasy": "Héraut de Mercator",
+            "sci-fi": "Pilote du Mercator"
+          },
+          "subtitle": "Amélioration de l'ERP",
+          "details": "Création de modules et adaptation de l'ERP aux besoins des employés et de l'entreprise.",
+          "list":[
+            {
+              "name":"Exploration des données d'autres ERP",
+              "description":"Module simplifiant la création d'articles dans Mercator en utilisant les données des autres ERP du groupe.",
+              "tech":"C#",
+              "link":"https://github.com/Sylvebois/mercatorWidgets/tree/master/ExploreProductsData"
+            },
+            {
+              "name":"Etiquettes de livraison Sendcloud",
+              "description":"Module permettant la création et l'impression d'une étiquette pour un envoi de colis via la plateforme Sendcloud.",
+              "tech":"C#",
+              "link":""
+            },
+            {
+              "name":"Chat intégré",
+              "description":"Module d'envoi de messages courts intégré directement dans l'ERP.",
+              "tech":"C#",
+              "link":""
+            },
+            {
+              "name":"Présence/absence",
+              "description":"Module permettant de visualiser (sur base du système de pointage) la présence ou non d'un collègue.",
+              "tech":"C#",
+              "link":"https://github.com/Sylvebois/PunchingSystem/tree/master/WhosThere"
+            },
+            {
+              "name":"Commandes à livrer",
+              "description":"Module listant les commandes devant être livrées le lendemain en fonction du magasin et de la demande du client.",
+              "tech":"C#",
+              "link":"https://github.com/Sylvebois/mercatorWidgets/tree/master/NextDayLiv"
+            },
+            {
+              "name":"Module de gestion des tâches",
+              "description":"Module permettant de gérer les tâches à réaliser par les employés.",
+              "tech":"C#",
+              "link":""
+            },
+            {
+              "name":"Module de gestion des commandes",
+              "description":"Module permettant de gérer les commandes des clients.",
+              "tech":"C#",
+              "link":""
+            }
+          ]
+        },
+        {
+          "year": "2014-2025",
+          "name": {
+            "classic": "Gestion de données",
+            "fantasy": "Gardien des données",
+            "sci-fi": "Data Master"
+          },
+          "subtitle": "Collecte et gestion de données",
+          "details": "Mise en place de systèmes automatiques de collecte et de gestion de données pour divers projets.",
+          "list":[
+            {
+              "name":"Campagne marketing SMS",
+              "description":"Envoi d'un sms publicitaire sur base d'un listing de numéros.",
+              "tech":"NodeJS, SMPP",
+              "link":""
+            },
+            {
+              "name":"Synchronisation entre ERP",
+              "description":"Synchronisation quotidienne des données clients, de l'état des commandes et des statistiques de vente entre les différents ERP du groupe.",
+              "tech":"SQL Serveur, Excel, PHP",
+              "link":""
+            },
+            {
+              "name":"Adaptation CSV",
+              "description":"Adaptation de fichiers de produits pour import dans l'ERP.",
+              "tech":"NodeJS",
+              "link":""
+            },
+            {
+              "name":"Webscraping e-commerce",
+              "description":"Application de collecte de données produits à des fins de comparaison avec nos propres produits.",
+              "tech":"NodeJS, Puppeteer",
+              "link":""
+            },
+            {
+              "name":"Synchronisation entre ERP et site e-commerce",
+              "description":"Communication des documents clients et données produits entre l'ERP et le site e-commerce.",
+              "tech":"SQL Serveur, MySQL, PHP",
+              "link":""
+            }
+          ]
+        },
+        {
+          "year": "2008-2023",
+          "name": {
+            "classic": "Webmaster",
+            "fantasy": "Tisseur de toile",
+            "sci-fi": "Dans la matrice du web"
+          },
+          "subtitle": "Création de sites web",
+          "details": "Création et gestion de divers site web :",
+          "list":[
+            {
+              "name": "www.bemush.eu",
+              "description": "Expérimentation de site marketplace",
+              "tech": "Drupal",
+              "link":"https://web.archive.org/web/20210507024151/https://www.cuisine-concept.be/"
+            },
+            {
+              "name": "www.cuisine-concept.be",
+              "description": "Site vitrine (monopage) de Cuisine Concept",
+              "tech": "HTML, CSS, JavaScript",
+              "link":"https://web.archive.org/web/20210507024151/https://www.cuisine-concept.be/"
+            },
+            {
+              "name": "www.sanidel.be",
+              "description": "Site B2C de Sanidel Namur",
+              "tech": "WordPress",
+              "link":"https://web.archive.org/web/20240825201035/https://www.sanidel.be/"
+            },
+            {
+              "name": "www.sanidel.eu",
+              "description": "Site e-commerce B2B de Sanidel (avec progressive web app)",
+              "tech": "HTML, CSS, JavaScript, PHP",
+              "link":"https://web.archive.org/web/20240229004530/https://sanidel.eu/"
+            },
+            {
+              "name": "www.sanidel.com",
+              "description": "Site B2C de Sanidel Marche-en-Famenne",
+              "tech": "Drupal",
+              "link":"https://web.archive.org/web/20130619161549/http://sanidel.com/"
+            }
+          ]
+        },
+        {
+          "year": "2021-2022",
+          "name": {
+            "classic": "Système de pointage",
+            "fantasy": "Maître du temps",
+            "sci-fi": "Chrono-mécanicien"
+          },
+          "subtitle": "Création d'un Système de gestion du temps de travail",
+          "details": "Création, mise en place et suivi d'un projet de pointeuse au sein de Sanidel",
+          "list":[
+            {
+              "name":"Partie hardware",
+              "description":"Assemblage et programmation des composants, liaison avec la base de données et utilisation de cartes NFC.",
+              "tech":"FreeCAD, Python",
+              "link":"https://www.linkedin.com/in/tghaye/details/projects/1931263295/multiple-media-viewer/?profileId=ACoAAAShMGgBYZpJtjt6EaFr15QQdm-EvkuNMvo&treasuryMediaId=1635533378777"
+            },
+            {
+              "name":"Partie application",
+              "description":"Création de l'application et d'un module de présence/absence intégré dans l'ERP.",
+              "tech":"C#",
+              "link":"https://github.com/Sylvebois/PunchingSystem" 
+            }
+          ]
+        },
+        {
+          "year": "2019-2020",
+          "name": {
+            "classic": "Jeux vidéo",
+            "fantasy": "Ludomancien",
+            "sci-fi": "Créateur de pixels"
+          },
+          "subtitle": "Créations et expérimentations vidéoludiques",
+          "details": "Création de jeux vidéo en 2D :",
+          "list": [
+            {
+              "name": "L'apprenti mathémagicien",
+              "description": "Un jeu éducatif pour s'entrainer aux opérations mathématiques de base",
+              "tech": "Javascript - Phaser",
+              "link":"https://github.com/Sylvebois/apprentiMathemagicien"
+            },
+            {
+              "name": "Timeline",
+              "description": "Un portage du jeu de carte éponyme",
+              "tech": "Javascript - Phaser",
+              "link":"https://github.com/Sylvebois/Timeline"
+            },
+            {
+              "name": "Run Plombo Run",
+              "description": "Un endless runner avec la mascotte de l'entreprise",
+              "tech": "Javascript - Phaser",
+              "link":"https://github.com/Sylvebois/run-plombo-run"
+            },
+            {
+              "name": "Scroll of Stupidity",
+              "description": "Un jeu de rôle un peu décalé",
+              "tech": "Javascript",
+              "link":"https://github.com/Sylvebois/MyFirstRPG/tree/vanilla-reboot"
+            }
+        ]
+        }
+      ]
+    },
+    "skills": {
+      "title": {
+        "classic": "Compétences",
+        "fantasy": "Capacités",
+        "sci-fi": "Compétences"
+      },
+      "content": {
+        "classic": [
+          {
+            "name": "Informatique",
+            "list": [
+              "C#",
+              "JavaScript",
+              "PHP",
+              "SQL",
+              "Git"
+            ]
+          },
+          {
+            "name": "Langues",
+            "list": [
+              "Français (natif)",
+              "Anglais (courant)",
+              "Néerlandais (courant - B2)"
+            ]
+          },
+          {
+            "name": "Soft skills",
+            "list": [
+              "Autodidacte",
+              "Autonome et proactif",
+              "Bonne capacité d'adaptation",
+              "Analyse et résolution de problèmes"
+            ]
+          }
+        ],
+        "fantasy": [
+          {
+            "name": "Compétences techniques",
+            "list": [
+              "Maîtrise des runes informatiques (C#, JavaScript, PHP)",
+              "Alchimie des bases de données (SQL)",
+              "Capacité à forger des artefacts numériques (Git)"
+            ]
+          },
+          {
+            "name": "Linguistique",
+            "list": [
+              "Français (natif)",
+              "Anglais (courant)",
+              "Néerlandais (courant - B2)"
+            ]
+          },
+          {
+            "name": "Traits de caractère",
+            "list": [
+              "Eternel apprenti (autodidacte)",
+              "Solveur de quête en solo ou en groupe (autonome et proactif)",
+              "Changeforme (bonne capacité d'adaptation)",
+              "Oeil perçant (analyse et résolution de problèmes)"
+            ]
+          }
+        ],
+        "sci-fi": [
+          {
+            "name": "Informatique",
+            "list": [
+              "C#",
+              "JavaScript",
+              "PHP",
+              "SQL",
+              "Git"
+            ]
+          },
+          {
+            "name": "Langues",
+            "list": [
+              "Français (natif)",
+              "Anglais (courant)",
+              "Néerlandais (courant - B2)"
+            ]
+          },
+          {
+            "name": "Soft skills",
+            "list": [
+              "Autodidacte",
+              "Autonome et proactif",
+              "Bonne capacité d'adaptation",
+              "Analyse et résolution de problèmes"
+            ]
+          }
+        ]
+      }
+    },
+    "assets": {
+      "title": {
+        "classic": "Avantages",
+        "fantasy": "Equipements et avantages",
+        "sci-fi": "Avantages"
+      },
+      "content": {
+        "classic": [
+          "Permis de conduire B",
+          "Disponible immédiatement"
+        ],
+        "fantasy": [
+          "Monture personnelle (Permis B)",
+          "Prêt à démarrer immédiatement une nouvelle quête"
+        ],
+        "sci-fi": [
+          "Vaisseau de transport personnel (Permis B)",
+          "Prêt à embarquer immédiatement pour une nouvelle mission"
+        ]
+      }
+    }
+  },
+  "en": [ ]
+}

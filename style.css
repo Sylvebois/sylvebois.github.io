@@ -1,0 +1,77 @@
+.portrait {
+  min-width: 100px;
+  min-height: 100px;
+  width: 15vw;
+  height: 15vw;
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
+}
+
+.info {
+  min-width: none;
+  width: 80vw;
+  padding-left: 5px;;
+  margin-top: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.info h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.viewmore {
+  cursor: pointer;
+  color: blue;
+  font-size: 1.1em;
+  border: 2px solid blue;
+}
+
+.closed,
+.open {
+  display: block;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.closed {
+  max-height: 0vh;
+}
+
+.open {
+  max-height: 20vh;
+}
+
+.classic {
+  background-color: white;
+}
+
+.fantasy {
+  background-color: #f8f4e3;
+}
+
+.fantasy .info {
+  border: 2px solid black;
+}
+
+.fantasy .portrait {
+  border: 2px solid black;
+}
+
+
+.sci-fi {
+  background-color: black;
+  color: green;
+}
+
+.sci-fi .info {
+  border: 2px solid green;
+}
+
+.sci-fi .portrait {
+  border: 2px solid green;
+}
