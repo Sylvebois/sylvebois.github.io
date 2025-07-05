@@ -12,6 +12,7 @@ class StyleSwitcher {
   }
   switchLanguage(lang) {
     this.currentLang = lang;
+    this.switchData();
     document.querySelector('html').lang = lang.toLowerCase();
     console.log(`Language switched to: ${this.currentLang}`);
   }
@@ -120,6 +121,7 @@ const showDetails = e => {
   const parent = e.target.closest('li');
   const childDiv = parent.querySelector('div');
   if (childDiv && childDiv.className === 'closed') {
+    document.querySelectorAll('.open').forEach(openDiv => openDiv.className = 'closed');
     childDiv.className = 'open';
   }
   else if (childDiv && childDiv.className === 'open') {
@@ -139,13 +141,14 @@ const main = async () => {
   const currentStyle = document.getElementById('styleCombo').value.toLowerCase() || 'classic';
   const styleSwitcher = new StyleSwitcher(currentLang, currentStyle, data);
 
-  // Add event listeners to show/hide details
   document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
 
   document.querySelectorAll('button').forEach(button => {
-    button.addEventListener('click',
-      e => styleSwitcher.switchLanguage(e.target.textContent.toLowerCase())
-    );
+    button.addEventListener('click', e => {
+      document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
+      styleSwitcher.switchLanguage(e.target.textContent.toLowerCase())
+      document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
+    });
   });
 
   document.getElementById('styleCombo').addEventListener('change', e => {
