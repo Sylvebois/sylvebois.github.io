@@ -50,7 +50,6 @@ class StyleSwitcher {
     });
 
     // Achievements
-    this.removeEventOnViewmore();
     const achievementsList = this.prepareSection('achievements', data.achievements);
 
     data.achievements.content.forEach(achievement => {
@@ -71,8 +70,7 @@ class StyleSwitcher {
 
       achievementsList.appendChild(li);
     });
-    this.addEventOnViewmore();
-    
+
     // Skills
     const skillList = this.prepareSection('skills', data.skills);
 
@@ -99,7 +97,7 @@ class StyleSwitcher {
       assetsList.appendChild(li);
     });
   }
-  prepareSection(nodeId, data){
+  prepareSection(nodeId, data) {
     const node = document.getElementById(nodeId);
     const nodeList = node.querySelector('ul');
 
@@ -108,26 +106,6 @@ class StyleSwitcher {
     nodeList.innerHTML = '';
 
     return nodeList;
-  }
-  removeEventOnViewmore() {
-    document.querySelectorAll('.viewmore').forEach(elem => {
-      elem.removeEventListener('click', this.showDetails);
-    });
-  }
-  addEventOnViewmore() {
-    document.querySelectorAll('.viewmore').forEach(elem => {
-      elem.addEventListener('click', this.showDetails);
-    });
-  }
-  showDetails(e) {
-    const parent = e.target.closest('li');
-    const childDiv = parent.querySelector('div');
-    if (childDiv && childDiv.className === 'closed') {
-      childDiv.className = 'open';
-    }
-    else if (childDiv && childDiv.className === 'open') {
-      childDiv.className = 'closed';
-    }
   }
 };
 
@@ -160,19 +138,21 @@ const main = async () => {
   const currentLang = document.querySelector('html').lang || 'en';
   const currentStyle = document.getElementById('styleCombo').value.toLowerCase() || 'classic';
   const styleSwitcher = new StyleSwitcher(currentLang, currentStyle, data);
-  
+
   // Add event listeners to show/hide details
   document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
 
   document.querySelectorAll('button').forEach(button => {
-    button.addEventListener('click', 
+    button.addEventListener('click',
       e => styleSwitcher.switchLanguage(e.target.textContent.toLowerCase())
     );
   });
 
-  document.getElementById('styleCombo').addEventListener('change', 
-    e => styleSwitcher.switchStyle(e.target.value.toLowerCase())
-  );
+  document.getElementById('styleCombo').addEventListener('change', e => {
+    document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
+    styleSwitcher.switchStyle(e.target.value.toLowerCase());
+    document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
+  });
 };
 
 main();
