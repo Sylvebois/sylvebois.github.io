@@ -145,7 +145,7 @@ const main = async () => {
   document.querySelectorAll('button').forEach(button => {
     button.addEventListener('click', e => {
       document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
-      styleSwitcher.switchLanguage(e.target.textContent.toLowerCase())
+      styleSwitcher.switchLanguage(e.target.value.toLowerCase())
       document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
     });
   });
