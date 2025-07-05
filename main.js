@@ -8,7 +8,6 @@ class StyleSwitcher {
   init() {
     this.switchLanguage(this.currentLang);
     this.switchStyle(this.currentStyle);
-    this.switchData();
   }
   switchLanguage(lang) {
     this.currentLang = lang;
