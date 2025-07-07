@@ -1,13 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+li {
+  padding: 5px;
+}
+
+#social h2 {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#social img {
+  max-width: 30px;
+  max-height: 30px;
+  margin-right: 10px;
+}
+
+#qr {
+  display: none;
+}
+
+#switcher {
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+#switcher button {
+  margin-right: 10px;
+  padding: 10px;
+}
+
 .portrait {
   min-width: 100px;
   min-height: 100px;
-  width: 15vw;
+  max-width: 15vw;
   height: 15vw;
   margin-top: 10px;
   display: inline-block;
   vertical-align: top;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  object-fit: cover;
+}
+
+.title-icon {
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
 .info {
@@ -24,11 +59,19 @@
   padding: 0;
 }
 
+.info p {
+  padding: 5px;
+}
+
 .viewmore {
   cursor: pointer;
-  color: blue;
-  font-size: 1.1em;
-  border: 2px solid blue;
+  color: white;
+  font-size: 1.05em;
+  background-color: blue;;
+  border: 1px solid blue;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left:5px;
 }
 
 .closed,
@@ -46,10 +89,17 @@
   max-height: 20vh;
 }
 
+/* Styling for classic theme */
 .classic {
   background-color: white;
 }
 
+.classic .portrait {
+  object-fit: contain;
+}
+
+
+/* Styling for fantasy theme */
 .fantasy {
   background-color: #f8f4e3;
 }
@@ -59,9 +109,17 @@
 }
 
 .fantasy .portrait {
+  width: 15vw;
   border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  object-fit: cover;
 }
 
+.fantasy h2 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  color: #8B1A10;
+}
 
 .sci-fi {
   background-color: black;
@@ -74,4 +132,115 @@
 
 .sci-fi .portrait {
   border: 2px solid green;
+}
+
+.sci-fi h2 {
+  font-family: "Bitcount Grid Double", monospace;
+  font-weight: 300;
+}
+
+@media print {
+  body {
+    print-color-adjust: exact;
+  }
+
+  section {
+    display: inline-block;
+    position: absolute;
+  }
+
+  #header {
+    width: 100vw;
+    height: 15vh;
+    top: 0;
+    left: 0;
+  }
+  .info p {
+    margin: 0;
+  }
+
+  #switcher, #social, .viewmore {
+    display: none;
+  }
+
+  #jobs, #education, #achievements {
+    left: 30vw;
+    width: 70vw;
+  }
+
+  #jobs {
+    top: 15vh;
+  }
+  #education {
+    top: 47vh;
+  }
+  #achievements {
+    top: 65vh;
+  }
+
+  #qr {
+    position: absolute;
+    display: inline-block;
+    top: 90vh;
+    width:100vw;
+  }
+  #qr h2 {
+    display: inline-block;
+  }
+  #qr img {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+  }
+
+  #skills, #assets {
+    width: 29vw;
+    left:0;
+  }
+
+  #skills {
+    top: 15vh;
+  }
+
+  #assets {
+    top: 65vh;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  li {
+    padding: 2px;
+  }
+
+  li em {
+    font-size: 0.9em;
+  }
+
+  li ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left:5px;
+  }
+
+  address {
+    position: absolute;
+    top: 4.5vh;
+    left: 50vw;
+    font-style: normal;
+  }
+
+  .classic #skills {
+    background: linear-gradient(340deg,rgba(255, 255, 255, 1) 50%, rgba(232, 228, 223, 1) 100%);
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+  }
+
+  .classic #assets {
+    background: linear-gradient(200deg,rgba(255, 255, 255, 1) 50%, rgba(232, 228, 223, 1) 100%);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
 }

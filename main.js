@@ -26,7 +26,7 @@ class StyleSwitcher {
 
     //Picture
     const pictureNode = document.getElementsByClassName('portrait')[0];
-    pictureNode.src = data.picture[this.currentStyle];
+    pictureNode.src = data.header.picture[this.currentStyle];
 
     // Info
     const infoNode = document.getElementsByClassName('info')[0];
@@ -65,7 +65,7 @@ class StyleSwitcher {
       }
 
       const li = document.createElement('li');
-      li.innerHTML = `<strong>${achievement.year}</strong> - ${achievement.name[this.currentStyle]} (${achievement.subtitle}) -- <span class="viewmore">i</span>`;
+      li.innerHTML = `<strong>${achievement.year}</strong> - ${achievement.name[this.currentStyle]} (${achievement.subtitle}) <span class="viewmore">i</span>`;
       li.innerHTML += `<div class="closed">${achievement.details}${detailledList}</div>`;
 
       achievementsList.appendChild(li);
@@ -101,8 +101,8 @@ class StyleSwitcher {
     const node = document.getElementById(nodeId);
     const nodeList = node.querySelector('ul');
 
-    node.querySelector('h2').innerHTML = `ICON - ${data.title[this.currentStyle]}`;
-    //node.querySelector('h2').innerHTML = `${data.icon[this.currentStyle]} - ${data.title[this.currentStyle]}`;
+    //node.querySelector('h2').innerHTML = `ICON - ${data.title[this.currentStyle]}`;
+    node.querySelector('h2').innerHTML = `<img class="title-icon" src="${data.icon[this.currentStyle]}"> ${data.title[this.currentStyle]}`;
     nodeList.innerHTML = '';
 
     return nodeList;
@@ -128,21 +128,38 @@ const showDetails = e => {
   }
 };
 
+const addContactOnPrint = () => {
+  const info = document.getElementsByClassName('info')[0];
+  const contact = document.createElement('address');
+  contact.innerHTML = '<p>\u{1F4F1} <a href="tel:+32476980231">0476 98 02 31</a></p>';
+  contact.innerHTML += '<p>\u{1F4E7} <a href="mailto:thomasghaye@hotmail.com">thomasghaye@hotmail.com</a></p>';
+  info.appendChild(contact);
+};
+
+const removeContactOnPrint = () => {
+  const contact = document.getElementsByTagName('address')[0];
+  contact.remove();
+};
+
 const main = async () => {
   const response = await fetch('./data.json');
   const data = await response.json();
+  const styleSwitcher = new StyleSwitcher('fr', 'classic', data);
 
   // Calculate age and set it in the HTML
   document.getElementById('age').textContent = calculateAge(new Date(1983, 10, 8));
 
-  // Initialize the style switcher with the current language, style and data
-  const currentLang = document.querySelector('html').lang || 'en';
-  const currentStyle = document.getElementById('styleCombo').value.toLowerCase() || 'classic';
-  const styleSwitcher = new StyleSwitcher(currentLang, currentStyle, data);
-
   document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
 
-  document.querySelectorAll('button').forEach(button => {
+  const switcherDiv = document.getElementById('switcher');
+
+  /** Printing events */
+  window.addEventListener('beforeprint', e => addContactOnPrint());
+  window.addEventListener('afterprint', e => removeContactOnPrint());
+  switcherDiv.querySelector('#print').addEventListener('click', e => window.print());
+
+  /** Language events */
+  switcherDiv.querySelectorAll('.langswitcher').forEach(button => {
     button.addEventListener('click', e => {
       document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
       styleSwitcher.switchLanguage(e.target.value.toLowerCase())
@@ -150,11 +167,30 @@ const main = async () => {
     });
   });
 
+  /** Theme events */
+  switcherDiv.querySelector('a').addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
+    
+    if(e.target.textContent.search('classique') === -1 && e.target.textContent.search('classic') === -1) {
+      e.target.innerHTML = 'Vous cherchez quelque chose de plus <em>classique</em> ?';
+      styleSwitcher.switchStyle('fantasy');
+    }
+    else {
+      e.target.innerHTML = 'Vous cherchez quelque chose de plus <em>épique</em> ?';
+      styleSwitcher.switchStyle('classic');
+    }
+
+    document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
+  });
+
+  /** OLD version using the select element
   document.getElementById('styleCombo').addEventListener('change', e => {
     document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
     styleSwitcher.switchStyle(e.target.value.toLowerCase());
     document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
   });
+  */
 };
 
 main();

@@ -1,13 +1,25 @@
 {
   "fr": {
-    "picture": {
-      "classic": "img/photo_cv.jpg",
-      "fantasy": "img/rodeur_fantasy_encre_remix.jpg",
-      "sci-fi": "img/space_marine_photorealiste_remix.jpg"
+    "header":{
+      "picture": {
+        "classic": "img/photo_cv.jpg",
+        "fantasy": "img/rodeur_fantasy_encre_remix.jpg",
+        "sci-fi": "img/space_marine_photorealiste_remix.jpg"
+      },
+      "place": {
+        "classic": "Lieu de résidence",
+        "fantasy": "Origine",
+        "sci-fi": "Secteur de la galaxie"
+      }
     },
     "jobs": {
+      "icon": {
+        "classic": "",
+        "fantasy": "icons/castle.svg",
+        "sci-fi": ""
+      },
       "title": {
-        "classic": "Expériences professionnelles",
+        "classic": "Expérience professionnelle",
         "fantasy": "Guildes antérieures",
         "sci-fi": "Corporations passées"
       },
@@ -33,6 +45,11 @@
       ]
     },
     "education": {
+      "icon": {
+        "classic": "",
+        "fantasy": "icons/dictionary.svg",
+        "sci-fi": ""
+      },
       "title":{
         "classic":"Formations",
         "fantasy":"Initiations académiques",
@@ -52,6 +69,11 @@
       ]
     },
     "achievements": {
+      "icon": {
+        "classic": "",
+        "fantasy": "icons/bookmark_star.svg",
+        "sci-fi": "icons/military_tech.svg"
+      },
       "title":{
         "classic": "Réalisations",
         "fantasy": "Hauts-faits",
@@ -259,6 +281,11 @@
       ]
     },
     "skills": {
+      "icon": {
+        "classic": "",
+        "fantasy": "icons/chess.svg",
+        "sci-fi": ""
+      },
       "title": {
         "classic": "Compétences",
         "fantasy": "Capacités",
@@ -356,6 +383,11 @@
       }
     },
     "assets": {
+      "icon": {
+        "classic": "",
+        "fantasy": "icons/star.svg",
+        "sci-fi": ""
+      },
       "title": {
         "classic": "Avantages",
         "fantasy": "Equipements et avantages",
