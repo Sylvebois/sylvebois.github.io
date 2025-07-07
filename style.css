@@ -98,6 +98,9 @@ li {
   object-fit: contain;
 }
 
+.classic h2 {
+    color: #8B1A10;
+}
 
 /* Styling for fantasy theme */
 .fantasy {
