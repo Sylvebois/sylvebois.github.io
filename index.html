@@ -8,13 +8,19 @@
 </head>
 <body class="classic" >
   <div id="switcher">
-    <select id="styleCombo">
-      <option value="classic">Classic</option>
-      <option value="fantasy">Fantasy</option>
-      <option value="sci-fi">Sci-Fi</option>
-    </select>
-    <button id="french" value="fr">FR</button>
-    <!--<button id="english" value="en">EN</button>-->
+    <!-- Disabled as the sci-fi version is not ready
+      <select id="styleCombo">
+        <option value="classic">Classic</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="sci-fi">Sci-Fi</option>
+      </select>
+    -->
+    <button id="print" value="printthis">Imprimer</button>
+    <button id="french" value="fr" class="langswitcher">FR</button>
+    <!-- Disabled until the English version is ready
+      <button id="english" value="en" class="langswitcher">EN</button>
+    -->
+    <a href="#">Vous cherchez quelque chose de plus <em>épique</em> ?</a>
   </div>
   <main>
     <section class="header">
@@ -22,30 +28,44 @@
         <div class="info">
           <h1>Thomas GHAYE</h1>
           <p><strong>Origine :</strong> Esneux</p>
-          <p><strong>Âge :</strong> <span id="age">0</span> ans</p>
+          <p><strong>Âge :</strong> <span id="age">41</span> ans</p>
           <p><strong>Statut :</strong> Marié</p>
         </div>
     </section>
     <section id="jobs">
-      <h2></h2>
-      <ul></ul>
+      <h2><img class="title-icon" src=""> Expériences professionnelles</h2>
+      <ul><li><strong>2024-2025</strong> - STG-Induscabel : IT Support Field Engineer<br><em>Support informatique, amélioration de la communication entre les ERP, préparation de la migration des données vers un seul ERP, création de rapports et statistiques</em></li><li><strong>2014-2024</strong> - Sanidel Namur S.A. : Responsable des systèmes d’information<br><em>Support informatique, mise à jour de la base de données des produits, création et gestion des catalogues et tarifs, mise en place et gestion des sites web.</em></li><li><strong>2008-2014</strong> - Sanidel S.A. : Responsable des systèmes d’information<br><em>Support informatique, mise à jour de la base de données des produits, création et gestion des catalogues et tarifs, mise en place et gestion des sites web.</em></li></ul>
     </section>
     <section id="education">
-      <h2></h2>
-      <ul></ul>
+      <h2><img class="title-icon" src=""> Formations</h2>
+      <ul><li><strong>2006-2008</strong> - ULiège<br><em>Licence en Histoire de l'art et archéologie, orientation Antiquité</em></li><li><strong>2002-2006</strong> - ULiège<br><em>Master à finalité approfondie en Histoire de l'art et archéologie, orientation archéométrie</em></li></ul>
     </section>
     <section id="achievements">
-      <h2></h2>
-      <ul></ul>
+      <h2><img class="title-icon" src=""> Réalisations</h2>
+      <ul><li><strong>2008-2025</strong> - ERP - Mercator (Amélioration de l'ERP) <span class="viewmore">i</span><div class="closed">Création de modules et adaptation de l'ERP aux besoins des employés et de l'entreprise.<ul><li><a href="https://github.com/Sylvebois/mercatorWidgets/tree/master/ExploreProductsData" target="_blank">Exploration des données d'autres ERP</a> : Module simplifiant la création d'articles dans Mercator en utilisant les données des autres ERP du groupe. -- C#</li><li>Etiquettes de livraison Sendcloud : Module permettant la création et l'impression d'une étiquette pour un envoi de colis via la plateforme Sendcloud. -- C#</li><li>Chat intégré : Module d'envoi de messages courts intégré directement dans l'ERP. -- C#</li><li><a href="https://github.com/Sylvebois/PunchingSystem/tree/master/WhosThere" target="_blank">Présence/absence</a> : Module permettant de visualiser (sur base du système de pointage) la présence ou non d'un collègue. -- C#</li><li><a href="https://github.com/Sylvebois/mercatorWidgets/tree/master/NextDayLiv" target="_blank">Commandes à livrer</a> : Module listant les commandes devant être livrées le lendemain en fonction du magasin et de la demande du client. -- C#</li><li>Module de gestion des tâches : Module permettant de gérer les tâches à réaliser par les employés. -- C#</li><li>Module de gestion des commandes : Module permettant de gérer les commandes des clients. -- C#</li></ul></div></li><li><strong>2014-2025</strong> - Gestion de données (Collecte et gestion de données) <span class="viewmore">i</span><div class="closed">Mise en place de systèmes automatiques de collecte et de gestion de données pour divers projets.<ul><li>Campagne marketing SMS : Envoi d'un sms publicitaire sur base d'un listing de numéros. -- NodeJS, SMPP</li><li>Synchronisation entre ERP : Synchronisation quotidienne des données clients, de l'état des commandes et des statistiques de vente entre les différents ERP du groupe. -- SQL Serveur, Excel, PHP</li><li>Adaptation CSV : Adaptation de fichiers de produits pour import dans l'ERP. -- NodeJS</li><li>Webscraping e-commerce : Application de collecte de données produits à des fins de comparaison avec nos propres produits. -- NodeJS, Puppeteer</li><li>Synchronisation entre ERP et site e-commerce : Communication des documents clients et données produits entre l'ERP et le site e-commerce. -- SQL Serveur, MySQL, PHP</li></ul></div></li><li><strong>2008-2023</strong> - Webmaster (Création de sites web) <span class="viewmore">i</span><div class="closed">Création et gestion de divers site web :<ul><li><a href="https://web.archive.org/web/20210507024151/https://www.cuisine-concept.be/" target="_blank">www.bemush.eu</a> : Expérimentation de site marketplace -- Drupal</li><li><a href="https://web.archive.org/web/20210507024151/https://www.cuisine-concept.be/" target="_blank">www.cuisine-concept.be</a> : Site vitrine (monopage) de Cuisine Concept -- HTML, CSS, JavaScript</li><li><a href="https://web.archive.org/web/20240825201035/https://www.sanidel.be/" target="_blank">www.sanidel.be</a> : Site B2C de Sanidel Namur -- WordPress</li><li><a href="https://web.archive.org/web/20240229004530/https://sanidel.eu/" target="_blank">www.sanidel.eu</a> : Site e-commerce B2B de Sanidel (avec progressive web app) -- HTML, CSS, JavaScript, PHP</li><li><a href="https://web.archive.org/web/20130619161549/http://sanidel.com/" target="_blank">www.sanidel.com</a> : Site B2C de Sanidel Marche-en-Famenne -- Drupal</li></ul></div></li><li><strong>2021-2022</strong> - Système de pointage (Création d'un Système de gestion du temps de travail) <span class="viewmore">i</span><div class="closed">Création, mise en place et suivi d'un projet de pointeuse au sein de Sanidel<ul><li><a href="https://www.linkedin.com/in/tghaye/details/projects/1931263295/multiple-media-viewer/?profileId=ACoAAAShMGgBYZpJtjt6EaFr15QQdm-EvkuNMvo&amp;treasuryMediaId=1635533378777" target="_blank">Partie hardware</a> : Assemblage et programmation des composants, liaison avec la base de données et utilisation de cartes NFC. -- FreeCAD, Python</li><li><a href="https://github.com/Sylvebois/PunchingSystem" target="_blank">Partie application</a> : Création de l'application et d'un module de présence/absence intégré dans l'ERP. -- C#</li></ul></div></li><li><strong>2019-2020</strong> - Jeux vidéo (Créations et expérimentations vidéoludiques) <span class="viewmore">i</span><div class="closed">Création de jeux vidéo en 2D :<ul><li><a href="https://github.com/Sylvebois/apprentiMathemagicien" target="_blank">L'apprenti mathémagicien</a> : Un jeu éducatif pour s'entrainer aux opérations mathématiques de base -- Javascript - Phaser</li><li><a href="https://github.com/Sylvebois/Timeline" target="_blank">Timeline</a> : Un portage du jeu de carte éponyme -- Javascript - Phaser</li><li><a href="https://github.com/Sylvebois/run-plombo-run" target="_blank">Run Plombo Run</a> : Un endless runner avec la mascotte de l'entreprise -- Javascript - Phaser</li><li><a href="https://github.com/Sylvebois/MyFirstRPG/tree/vanilla-reboot" target="_blank">Scroll of Stupidity</a> : Un jeu de rôle un peu décalé -- Javascript</li></ul></div></li></ul>
     </section>
     <section id="skills">
-      <h2></h2>
-      <ul></ul>
+      <h2><img class="title-icon" src=""> Compétences</h2>
+      <ul><li><strong>Informatique</strong><ul><li>C#</li><li>JavaScript</li><li>PHP</li><li>SQL</li><li>Git</li><li>Linux</li></ul></li><li><strong>Langues</strong><ul><li>Français (natif)</li><li>Anglais (courant)</li><li>Néerlandais (courant - B2)</li></ul></li><li><strong>Soft skills</strong><ul><li>Autodidacte</li><li>Autonome et proactif</li><li>Bonne capacité d'adaptation</li><li>Analyse et résolution de problèmes</li></ul></li></ul>
     </section>
     <section id="assets">
-      <h2></h2>
-      <ul></ul>
+      <h2><img class="title-icon" src=""> Avantages</h2>
+      <ul><li>Permis de conduire B</li><li>Disponible immédiatement</li></ul>
     </section>
+    <aside id="social">
+      <h2>Social :</h2>
+      <a href="https://www.linkedin.com/in/tghaye/" target="_blank" rel="noopener noreferrer"><img src="icons/linkedin.svg"></a>
+      <a href="https://www.facebook.com/thomas.ghaye" target="_blank" rel="noopener noreferrer"><img src="icons/facebook.svg"></a>
+      <a href="https://github.com/Sylvebois" target="_blank" rel="noopener noreferrer"><img src="icons/github.svg"></a>
+      <a href="https://www.codingame.com/profile/5c7c853d467ffb92eeea313b421d54786158811" target="_blank" rel="noopener noreferrer"><img src="icons/codingame.svg"></a>
+    </aside>
+    <aside id="qr">
+      <h2>Social :</h2>
+      <img src="img/qr-linkedin-profile.svg" alt="QR Code vers mon profil LinkedIn">
+      <img src="img/qr-facebook-profile.svg" alt="QR Code vers mon profil Facebook">
+      <img src="img/qr-github-profile.svg" alt="QR Code vers mon profil GitHub">
+      <img src="img/qr-codingame-profile.svg" alt="QR Code vers le profil Codingame">
+    </aside>
   </main>
   <script src="main.js" defer></script>
 </body>
