@@ -29,7 +29,8 @@ class StyleSwitcher {
     pictureNode.src = data.header.picture[this.currentStyle];
 
     // Info
-    const infoNode = document.getElementsByClassName('info')[0];
+    const placeNode = document.getElementsByClassName('info')[0].querySelectorAll('p strong')[0];
+    placeNode.innerHTML = data.header.place[this.currentStyle] + ' : ';
 
     // Jobs
     const jobsList = this.prepareSection('jobs', data.jobs);
