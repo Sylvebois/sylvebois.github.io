@@ -85,10 +85,6 @@ li {
   max-height: 0vh;
 }
 
-.open {
-  max-height: 20vh;
-}
-
 /* Styling for classic theme */
 .classic {
   background-color: white;
