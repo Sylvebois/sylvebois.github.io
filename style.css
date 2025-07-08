@@ -246,4 +246,12 @@ li {
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
   }
+
+  .fantasy #skills, .fantasy #assets {
+    font-size: 0.9em;
+  }
+
+  .fantasy #assets {
+    top: 68vh;
+  }
 }
