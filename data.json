@@ -14,7 +14,7 @@
     },
     "jobs": {
       "icon": {
-        "classic": "",
+        "classic": "icons/suitcase.svg",
         "fantasy": "icons/castle.svg",
         "sci-fi": ""
       },
@@ -46,7 +46,7 @@
     },
     "education": {
       "icon": {
-        "classic": "",
+        "classic": "icons/school_hat.svg",
         "fantasy": "icons/dictionary.svg",
         "sci-fi": ""
       },
@@ -70,7 +70,7 @@
     },
     "achievements": {
       "icon": {
-        "classic": "",
+        "classic": "icons/assignment_turned_in.svg",
         "fantasy": "icons/bookmark_star.svg",
         "sci-fi": "icons/military_tech.svg"
       },
@@ -282,7 +282,7 @@
     },
     "skills": {
       "icon": {
-        "classic": "",
+        "classic": "icons/cognition.svg",
         "fantasy": "icons/chess.svg",
         "sci-fi": ""
       },
@@ -384,7 +384,7 @@
     },
     "assets": {
       "icon": {
-        "classic": "",
+        "classic": "icons/star.svg",
         "fantasy": "icons/star.svg",
         "sci-fi": ""
       },
