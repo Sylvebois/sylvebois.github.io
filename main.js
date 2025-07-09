@@ -173,26 +173,17 @@ const main = async () => {
     });
   });
   
-  /*
-  switcherDiv.querySelectorAll('.langswitcher').forEach(button => {
-    button.addEventListener('click', e => {
-      document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
-      styleSwitcher.switchLanguage(e.target.value.toLowerCase())
-      document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
-    });
-  });
-*/
   /** Theme events */
   switcherDiv.querySelector('a').addEventListener('click', e => {
     e.preventDefault();
     document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
     
-    if(e.target.textContent.search('classique') === -1 && e.target.textContent.search('classic') === -1) {
-      e.target.innerHTML = 'Vous cherchez quelque chose de plus <em>classique</em> ?';
+    if(styleSwitcher.currentStyle === 'classic') {
+      e.target.querySelector('em').innerHTML = 'classique';
       styleSwitcher.switchStyle('fantasy');
     }
     else {
-      e.target.innerHTML = 'Vous cherchez quelque chose de plus <em>épique</em> ?';
+      e.target.querySelector('em').innerHTML = 'épique';
       styleSwitcher.switchStyle('classic');
     }
 
