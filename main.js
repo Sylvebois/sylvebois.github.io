@@ -134,6 +134,7 @@ const addContactOnPrint = () => {
   const contact = document.createElement('address');
   contact.innerHTML = '<p>\u{1F4F1} <a href="tel:+32476980231">0476 98 02 31</a></p>';
   contact.innerHTML += '<p>\u{1F4E7} <a href="mailto:thomasghaye@hotmail.com">thomasghaye@hotmail.com</a></p>';
+  contact.innerHTML += '<p>\u{1F30E} <a href="https://sylvebois.github.io">sylvebois.github.io</a</p>'
   info.appendChild(contact);
 };
 
@@ -160,6 +161,19 @@ const main = async () => {
   switcherDiv.querySelector('#print').addEventListener('click', e => window.print());
 
   /** Language events */
+  console.log(switcherDiv.querySelectorAll('[name="langswitcher"]'))
+  switcherDiv.querySelectorAll('[name="langswitcher"]').forEach(radio =>{
+    radio.addEventListener('change', e => {
+      console.log(e.target.checked)
+      if(e.target.checked) {
+        document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
+        styleSwitcher.switchLanguage(e.target.value.toLowerCase())
+        document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
+      }
+    });
+  });
+  
+  /*
   switcherDiv.querySelectorAll('.langswitcher').forEach(button => {
     button.addEventListener('click', e => {
       document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
@@ -167,7 +181,7 @@ const main = async () => {
       document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
     });
   });
-
+*/
   /** Theme events */
   switcherDiv.querySelector('a').addEventListener('click', e => {
     e.preventDefault();
