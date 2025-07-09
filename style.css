@@ -25,9 +25,14 @@ li {
   padding-bottom: 5px;
 }
 
-#switcher button {
+#print {
   margin-right: 10px;
-  padding: 10px;
+  padding: 0 5px;
+  font-size: 2em;
+}
+
+#switcher a {
+  margin-left: 10px;
 }
 
 .portrait {
