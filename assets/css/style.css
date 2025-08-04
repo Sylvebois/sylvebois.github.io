@@ -8,7 +8,7 @@ li {
 #print img {
   width: 20px;
   height: 20px;
-} 
+}
 
 #social h2 {
   display: inline-block;
@@ -120,15 +120,13 @@ li {
   content: '';
   position: fixed;
   inset: 0;
-  background-image: 
+  background-image:
     url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
-    repeating-linear-gradient(
-      -45deg,
+    repeating-linear-gradient(-45deg,
       rgba(139, 69, 19, 0.05) 0px,
       rgba(139, 69, 19, 0.05) 1px,
       transparent 1px,
-      transparent 3px
-    );
+      transparent 3px);
   opacity: 0.3;
   z-index: -1;
   pointer-events: none;
@@ -138,7 +136,7 @@ li {
   border: 2px solid black;
 }
 
-.fantasy .info h1{
+.fantasy .info h1 {
   font-family: "Dancing Script", cursive;
   font-size: xx-large;
   color: #8B1A10;
@@ -187,7 +185,14 @@ li {
 
 /* Print style */
 @media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 6mm;
+  }
+
   body {
+    min-width: 210mm;
+    min-height: 297mm;
     print-color-adjust: exact;
   }
 
@@ -205,6 +210,13 @@ li {
     margin: 0;
   }
 
+  address {
+    position: absolute;
+    top: 10mm;
+    left: 100mm;
+    font-style: normal;
+  }
+
   #switcher,
   #social,
   .viewmore {
@@ -214,27 +226,41 @@ li {
   #jobs,
   #education,
   #achievements {
-    left: 230px;
-    width: 500px;
+    left: 70mm;
+    width: 124mm;
   }
 
   #jobs {
-    top: 155px;
+    top: 45mm;
   }
 
   #education {
-    top: 455px;
+    top: 130mm;
   }
 
   #achievements {
-    top: 625px;
+    top: 180mm;
   }
 
   #qr {
     position: absolute;
     display: inline-block;
-    top: 900px;
-    left: 100px;
+    top: 265mm;
+    left: 25mm;
+  }
+
+  #skills,
+  #assets {
+    left: 4mm;
+    width: 65mm;
+  }
+
+  #skills {
+    top: 45mm;
+  }
+
+  #assets {
+    top: 180mm;
   }
 
   #qr h2 {
@@ -244,31 +270,17 @@ li {
 
   #qr img {
     display: inline-block;
-    width: 75px;
-    height: 75px;
-    margin-left: 20px;
-  }
-
-  #skills,
-  #assets {
-    width: 200px;
-    left: 10px;
-  }
-
-  #skills {
-    top: 155px;
-  }
-
-  #assets {
-    top: 690px;
+    width: 20mm;
+    height: 20mm;
+    margin-left: 5mm;
   }
 
   h2 {
-    margin-bottom: 10px;
+    margin-bottom: 3mm;
   }
 
   li {
-    padding: 2px;
+    padding: 1mm;
   }
 
   li em {
@@ -278,14 +290,7 @@ li {
   li ul {
     list-style-type: none;
     margin: 0;
-    padding-left: 5px;
-  }
-
-  address {
-    position: absolute;
-    top: 45px;
-    left: 350px;
-    font-style: normal;
+    padding-left: 2mm;
   }
 
   .classic #skills {
@@ -305,7 +310,11 @@ li {
     font-size: 0.9em;
   }
 
+  .fantasy #skills {
+    top: 46mm;
+  }
+
   .fantasy #assets {
-    top: 670px;
+    top: 181mm;
   }
 }
