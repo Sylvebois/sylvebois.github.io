@@ -2,9 +2,9 @@
   "fr": {
     "header":{
       "picture": {
-        "classic": "img/photo_cv.jpg",
-        "fantasy": "img/rodeur_fantasy_encre_remix.jpg",
-        "sci-fi": "img/space_marine_photorealiste_remix.jpg"
+        "classic": "assets/img/photo_cv.jpg",
+        "fantasy": "assets/img/rodeur_fantasy_encre_remix.jpg",
+        "sci-fi": "assets/img/space_marine_photorealiste_remix.jpg"
       },
       "place": {
         "classic": "Lieu de résidence",
@@ -14,8 +14,8 @@
     },
     "jobs": {
       "icon": {
-        "classic": "icons/suitcase.svg",
-        "fantasy": "icons/castle.svg",
+        "classic": "assets/img/icons/suitcase.svg",
+        "fantasy": "assets/img/icons/castle.svg",
         "sci-fi": ""
       },
       "title": {
@@ -46,8 +46,8 @@
     },
     "education": {
       "icon": {
-        "classic": "icons/school_hat.svg",
-        "fantasy": "icons/dictionary.svg",
+        "classic": "assets/img/icons/school_hat.svg",
+        "fantasy": "assets/img/icons/dictionary.svg",
         "sci-fi": ""
       },
       "title":{
@@ -70,9 +70,9 @@
     },
     "achievements": {
       "icon": {
-        "classic": "icons/assignment_turned_in.svg",
-        "fantasy": "icons/bookmark_star.svg",
-        "sci-fi": "icons/military_tech.svg"
+        "classic": "assets/img/icons/assignment_turned_in.svg",
+        "fantasy": "assets/img/icons/bookmark_star.svg",
+        "sci-fi": "assets/img/icons/military_tech.svg"
       },
       "title":{
         "classic": "Réalisations",
@@ -282,8 +282,8 @@
     },
     "skills": {
       "icon": {
-        "classic": "icons/cognition.svg",
-        "fantasy": "icons/chess.svg",
+        "classic": "assets/img/icons/cognition.svg",
+        "fantasy": "assets/img/icons/chess.svg",
         "sci-fi": ""
       },
       "title": {
@@ -384,8 +384,8 @@
     },
     "assets": {
       "icon": {
-        "classic": "icons/star.svg",
-        "fantasy": "icons/star.svg",
+        "classic": "assets/img/icons/star.svg",
+        "fantasy": "assets/img/icons/star.svg",
         "sci-fi": ""
       },
       "title": {
@@ -412,9 +412,9 @@
   "en": {
     "header": {
       "picture": {
-        "classic": "img/photo_cv.jpg",
-        "fantasy": "img/rodeur_fantasy_encre_remix.jpg",
-        "sci-fi": "img/space_marine_photorealiste_remix.jpg"
+        "classic": "assets/img/photo_cv.jpg",
+        "fantasy": "assets/img/rodeur_fantasy_encre_remix.jpg",
+        "sci-fi": "assets/img/space_marine_photorealiste_remix.jpg"
       },
       "place": {
         "classic": "Residence location",
@@ -424,8 +424,8 @@
     },
     "jobs": {
       "icon": {
-        "classic": "icons/suitcase.svg",
-        "fantasy": "icons/castle.svg",
+        "classic": "assets/img/icons/suitcase.svg",
+        "fantasy": "assets/img/icons/castle.svg",
         "sci-fi": ""
       },
       "title": {
@@ -456,8 +456,8 @@
     },
     "education": {
       "icon": {
-        "classic": "icons/school_hat.svg",
-        "fantasy": "icons/dictionary.svg",
+        "classic": "assets/img/icons/school_hat.svg",
+        "fantasy": "assets/img/icons/dictionary.svg",
         "sci-fi": ""
       },
       "title": {
@@ -480,9 +480,9 @@
     },
     "achievements": {
       "icon": {
-        "classic": "icons/assignment_turned_in.svg",
-        "fantasy": "icons/bookmark_star.svg",
-        "sci-fi": "icons/military_tech.svg"
+        "classic": "assets/img/icons/assignment_turned_in.svg",
+        "fantasy": "assets/img/icons/bookmark_star.svg",
+        "sci-fi": "assets/img/icons/military_tech.svg"
       },
       "title": {
         "classic": "Achievements",
@@ -692,8 +692,8 @@
     },
     "skills": {
       "icon": {
-        "classic": "icons/cognition.svg",
-        "fantasy": "icons/chess.svg",
+        "classic": "assets/img/icons/cognition.svg",
+        "fantasy": "assets/img/icons/chess.svg",
         "sci-fi": ""
       },
       "title": {
@@ -794,8 +794,8 @@
     },
     "assets": {
       "icon": {
-        "classic": "icons/star.svg",
-        "fantasy": "icons/star.svg",
+        "classic": "assets/img/icons/star.svg",
+        "fantasy": "assets/img/icons/star.svg",
         "sci-fi": ""
       },
       "title": {

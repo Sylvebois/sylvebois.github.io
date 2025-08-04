@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
+
 li {
   padding: 5px;
 }
@@ -53,7 +54,8 @@ li {
 .info {
   min-width: none;
   width: 80vw;
-  padding-left: 5px;;
+  padding-left: 5px;
+  ;
   margin-top: 10px;
   display: inline-block;
   vertical-align: top;
@@ -72,11 +74,12 @@ li {
   cursor: pointer;
   color: white;
   font-size: 0.9em;
-  background-color: blue;;
+  background-color: blue;
+  ;
   border: 1px solid blue;
   border-radius: 50%;
   padding: 0 5px;
-  margin-left:5px;
+  margin-left: 5px;
 }
 
 .closed,
@@ -100,7 +103,7 @@ li {
 }
 
 .classic h2 {
-    color: #8B1A10;
+  color: #8B1A10;
 }
 
 /* Styling for fantasy theme */
@@ -159,15 +162,20 @@ li {
     top: 0;
     left: 0;
   }
+
   .info p {
     margin: 0;
   }
 
-  #switcher, #social, .viewmore {
+  #switcher,
+  #social,
+  .viewmore {
     display: none;
   }
 
-  #jobs, #education, #achievements {
+  #jobs,
+  #education,
+  #achievements {
     left: 30vw;
     width: 70vw;
   }
@@ -175,9 +183,11 @@ li {
   #jobs {
     top: 15vh;
   }
+
   #education {
     top: 47vh;
   }
+
   #achievements {
     top: 65vh;
   }
@@ -186,11 +196,13 @@ li {
     position: absolute;
     display: inline-block;
     top: 90vh;
-    width:100vw;
+    width: 100vw;
   }
+
   #qr h2 {
     display: inline-block;
   }
+
   #qr img {
     display: inline-block;
     width: 75px;
@@ -198,9 +210,10 @@ li {
     margin-left: 20px;
   }
 
-  #skills, #assets {
+  #skills,
+  #assets {
     width: 29vw;
-    left:0;
+    left: 0;
   }
 
   #skills {
@@ -226,7 +239,7 @@ li {
   li ul {
     list-style-type: none;
     margin: 0;
-    padding-left:5px;
+    padding-left: 5px;
   }
 
   address {
@@ -237,18 +250,19 @@ li {
   }
 
   .classic #skills {
-    background: linear-gradient(340deg,rgba(255, 255, 255, 1) 50%, rgba(232, 228, 223, 1) 100%);
+    background: linear-gradient(340deg, rgba(255, 255, 255, 1) 50%, rgba(232, 228, 223, 1) 100%);
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
   }
 
   .classic #assets {
-    background: linear-gradient(200deg,rgba(255, 255, 255, 1) 50%, rgba(232, 228, 223, 1) 100%);
+    background: linear-gradient(200deg, rgba(255, 255, 255, 1) 50%, rgba(232, 228, 223, 1) 100%);
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
   }
 
-  .fantasy #skills, .fantasy #assets {
+  .fantasy #skills,
+  .fantasy #assets {
     font-size: 0.9em;
   }
 
