@@ -5,6 +5,11 @@ li {
   padding: 5px;
 }
 
+#print img {
+  width: 20px;
+  height: 20px;
+} 
+
 #social h2 {
   display: inline-block;
   margin-right: 10px;
@@ -192,8 +197,6 @@ li {
   }
 
   #header {
-    width: 100vw;
-    height: 15vh;
     top: 0;
     left: 0;
   }
@@ -211,31 +214,32 @@ li {
   #jobs,
   #education,
   #achievements {
-    left: 30vw;
-    width: 70vw;
+    left: 230px;
+    width: 500px;
   }
 
   #jobs {
-    top: 15vh;
+    top: 155px;
   }
 
   #education {
-    top: 47vh;
+    top: 455px;
   }
 
   #achievements {
-    top: 65vh;
+    top: 625px;
   }
 
   #qr {
     position: absolute;
     display: inline-block;
-    top: 90vh;
-    width: 100vw;
+    top: 900px;
+    left: 100px;
   }
 
   #qr h2 {
     display: inline-block;
+    vertical-align: top;
   }
 
   #qr img {
@@ -247,16 +251,16 @@ li {
 
   #skills,
   #assets {
-    width: 29vw;
-    left: 0;
+    width: 200px;
+    left: 10px;
   }
 
   #skills {
-    top: 15vh;
+    top: 155px;
   }
 
   #assets {
-    top: 65vh;
+    top: 690px;
   }
 
   h2 {
@@ -279,8 +283,8 @@ li {
 
   address {
     position: absolute;
-    top: 4.5vh;
-    left: 50vw;
+    top: 45px;
+    left: 350px;
     font-style: normal;
   }
 
@@ -302,6 +306,6 @@ li {
   }
 
   .fantasy #assets {
-    top: 68vh;
+    top: 670px;
   }
 }
