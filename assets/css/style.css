@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
-
 li {
   padding: 5px;
 }
@@ -44,6 +43,7 @@ li {
   margin-top: 10px;
   display: inline-block;
   vertical-align: top;
+  view-transition-name: portrait;
 }
 
 .title-icon {
@@ -55,10 +55,10 @@ li {
   min-width: none;
   width: 80vw;
   padding-left: 5px;
-  ;
   margin-top: 10px;
   display: inline-block;
   vertical-align: top;
+  view-transition-name: info;
 }
 
 .info h1 {
@@ -108,11 +108,35 @@ li {
 
 /* Styling for fantasy theme */
 .fantasy {
-  background-color: #f8f4e3;
+  background-color: #fcf6e0;
+}
+
+.fantasy::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: 
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(139, 69, 19, 0.05) 0px,
+      rgba(139, 69, 19, 0.05) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  opacity: 0.3;
+  z-index: -1;
+  pointer-events: none;
 }
 
 .fantasy .info {
   border: 2px solid black;
+}
+
+.fantasy .info h1{
+  font-family: "Dancing Script", cursive;
+  font-size: xx-large;
+  color: #8B1A10;
 }
 
 .fantasy .portrait {
@@ -146,6 +170,17 @@ li {
   font-weight: 300;
 }
 
+/* Theme switching transition */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(portrait),
+::view-transition-group(info) {
+  animation-duration: 0.5s;
+}
+
+/* Print style */
 @media print {
   body {
     print-color-adjust: exact;

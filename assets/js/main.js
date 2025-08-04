@@ -52,29 +52,43 @@ const main = async () => {
 
   /** Language events */
   console.log(switcherDiv.querySelectorAll('[name="langswitcher"]'))
-  switcherDiv.querySelectorAll('[name="langswitcher"]').forEach(radio =>{
+  switcherDiv.querySelectorAll('[name="langswitcher"]').forEach(radio => {
     radio.addEventListener('change', e => {
       console.log(e.target.checked)
-      if(e.target.checked) {
+      if (e.target.checked) {
         document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
         styleSwitcher.switchLanguage(e.target.value.toLowerCase())
         document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
       }
     });
   });
-  
+
   /** Theme events */
-  switcherDiv.querySelector('a').addEventListener('click', e => {
+  switcherDiv.querySelector('a').addEventListener('click', async e => {
     e.preventDefault();
     document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
-    
-    if(styleSwitcher.currentStyle === 'classic') {
-      e.target.querySelector('em').innerHTML = 'classique';
-      styleSwitcher.switchStyle('fantasy');
+
+    if (document.startViewTransition) {
+      await document.startViewTransition(() => {
+        if (styleSwitcher.currentStyle === 'classic') {
+          e.target.querySelector('em').innerHTML = 'classique';
+          styleSwitcher.switchStyle('fantasy');
+        }
+        else {
+          e.target.querySelector('em').innerHTML = 'épique';
+          styleSwitcher.switchStyle('classic');
+        }
+      }).ready;
     }
     else {
-      e.target.querySelector('em').innerHTML = 'épique';
-      styleSwitcher.switchStyle('classic');
+      if (styleSwitcher.currentStyle === 'classic') {
+        e.target.querySelector('em').innerHTML = 'classique';
+        styleSwitcher.switchStyle('fantasy');
+      }
+      else {
+        e.target.querySelector('em').innerHTML = 'épique';
+        styleSwitcher.switchStyle('classic');
+      }
     }
 
     document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
