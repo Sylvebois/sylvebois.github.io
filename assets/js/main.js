@@ -65,23 +65,11 @@ const main = async () => {
   /** Theme events */
   switcherDiv.querySelector('#themeSwitcher').addEventListener('click', e => {
     e.preventDefault();
-    let target = (e.target.tagName === 'EM')? e.target : e.target.querySelector('em');
+    let target = (e.target.tagName === 'EM') ? e.target : e.target.querySelector('em');
 
     document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
 
-    if (document.startViewTransition) {
-      document.startViewTransition(() => {
-        if (styleSwitcher.currentStyle === 'classic') {
-          target.innerHTML = 'classique';
-          styleSwitcher.switchStyle('fantasy');
-        }
-        else {
-          target.innerHTML = 'épique';
-          styleSwitcher.switchStyle('classic');
-        }
-      });
-    }
-    else {
+    const switchIt = () => {
       if (styleSwitcher.currentStyle === 'classic') {
         target.innerHTML = 'classique';
         styleSwitcher.switchStyle('fantasy');
@@ -90,6 +78,13 @@ const main = async () => {
         target.innerHTML = 'épique';
         styleSwitcher.switchStyle('classic');
       }
+    };
+
+    if (document.startViewTransition) {
+      document.startViewTransition(() => switchIt());
+    }
+    else {
+      switchIt();
     }
 
     document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
