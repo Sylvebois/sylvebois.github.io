@@ -54,7 +54,6 @@ const main = async () => {
   console.log(switcherDiv.querySelectorAll('[name="langswitcher"]'))
   switcherDiv.querySelectorAll('[name="langswitcher"]').forEach(radio => {
     radio.addEventListener('change', e => {
-      console.log(e.target.checked)
       if (e.target.checked) {
         document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
         styleSwitcher.switchLanguage(e.target.value.toLowerCase())
@@ -64,29 +63,31 @@ const main = async () => {
   });
 
   /** Theme events */
-  switcherDiv.querySelector('a').addEventListener('click', async e => {
+  switcherDiv.querySelector('#themeSwitcher').addEventListener('click', e => {
     e.preventDefault();
+    let target = (e.target.tagName === 'EM')? e.target : e.target.querySelector('em');
+
     document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
 
     if (document.startViewTransition) {
-      await document.startViewTransition(() => {
+      document.startViewTransition(() => {
         if (styleSwitcher.currentStyle === 'classic') {
-          e.target.querySelector('em').innerHTML = 'classique';
+          target.innerHTML = 'classique';
           styleSwitcher.switchStyle('fantasy');
         }
         else {
-          e.target.querySelector('em').innerHTML = 'épique';
+          target.innerHTML = 'épique';
           styleSwitcher.switchStyle('classic');
         }
-      }).ready;
+      });
     }
     else {
       if (styleSwitcher.currentStyle === 'classic') {
-        e.target.querySelector('em').innerHTML = 'classique';
+        target.innerHTML = 'classique';
         styleSwitcher.switchStyle('fantasy');
       }
       else {
-        e.target.querySelector('em').innerHTML = 'épique';
+        target.innerHTML = 'épique';
         styleSwitcher.switchStyle('classic');
       }
     }
