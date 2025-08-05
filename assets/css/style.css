@@ -5,11 +5,6 @@ li {
   padding: 5px;
 }
 
-#print img {
-  width: 20px;
-  height: 20px;
-}
-
 #social h2 {
   display: inline-block;
   margin-right: 10px;
@@ -36,7 +31,14 @@ li {
   font-size: 2em;
 }
 
-#switcher a {
+#print img {
+  width: 20px;
+  height: 20px;
+}
+
+#themeSwitcher {
+  color: blue;
+  cursor: pointer;
   margin-left: 10px;
 }
 
