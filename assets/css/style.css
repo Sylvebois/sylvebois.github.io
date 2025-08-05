@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
+body {
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
 li {
   padding: 5px;
 }
@@ -51,6 +55,9 @@ li {
   display: inline-block;
   vertical-align: top;
   view-transition-name: portrait;
+  /* Fallback for browsers without view transitions */
+  transition: opacity 0.5s ease-in-out, border 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
+  opacity: 1;
 }
 
 .title-icon {
@@ -66,6 +73,9 @@ li {
   display: inline-block;
   vertical-align: top;
   view-transition-name: info;
+  /* Fallback for browsers without view transitions */
+  transition: opacity 0.5s ease-in-out, border 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
+  opacity: 1;
 }
 
 .info h1 {
@@ -183,6 +193,37 @@ li {
 ::view-transition-group(portrait),
 ::view-transition-group(info) {
   animation-duration: 0.5s;
+}
+
+/* Animation fallback */
+.portrait.fade-in,
+.info.fade-in {
+  animation: fade-in 0.5s forwards;
+}
+
+.portrait.fade-out,
+.info.fade-out {
+  animation: fade-out 0.5s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
 
 /* Print style */

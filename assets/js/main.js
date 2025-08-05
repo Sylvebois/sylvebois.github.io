@@ -84,7 +84,15 @@ const main = async () => {
       document.startViewTransition(() => switchIt());
     }
     else {
-      switchIt();
+      const portrait = document.querySelector('.portrait');
+      const info = document.querySelector('.info');
+      portrait.style.opacity = 0;
+      info.style.opacity = 0;
+      setTimeout(() => {
+        switchIt();
+        portrait.style.opacity = 1;
+        info.style.opacity = 1;
+      }, 500);
     }
 
     document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
