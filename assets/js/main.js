@@ -34,7 +34,7 @@ const removeContactOnPrint = () => {
 };
 
 const main = async () => {
-  const response = await fetch('assets/data/data.json');
+  const response = await fetch('assets/data/cv.json');
   const data = await response.json();
   const styleSwitcher = new StyleSwitcher('fr', 'classic', data);
 
@@ -78,7 +78,7 @@ const main = async () => {
         target.innerHTML = 'épique';
         styleSwitcher.switchStyle('classic');
       }
-      
+
       document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
     };
 

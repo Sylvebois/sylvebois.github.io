@@ -1,5 +1,10 @@
 {
   "fr": {
+    "switcher": {
+      "classic": "Vous cherchez quelque chose de plus <em>épique</em> ?",
+      "fantasy": "Vous cherchez quelque chose de plus <em>classique</em> ?",
+      "sci-fi": "Vous cherchez quelque chose de plus <em>classique</em> ?"
+    },
     "header":{
       "picture": {
         "classic": "assets/img/photo_cv.jpg",
@@ -410,6 +415,11 @@
     }
   },
   "en": {
+    "switcher": {
+      "classic": "Looking for something more <em>epic</em> ?",
+      "fantasy": "Looking for something more <em>classic</em> ?",
+      "sci-fi": "Looking for something more <em>classic</em> ?"
+    },
     "header": {
       "picture": {
         "classic": "assets/img/photo_cv.jpg",
