@@ -136,7 +136,7 @@ li {
 
 /* Styling for fantasy theme */
 .fantasy {
-  background-image: url("/assets/img/texture_parchemin.png");
+  background-image: url("/assets/img/texture_parchemin.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
