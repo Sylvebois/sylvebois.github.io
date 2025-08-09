@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
+:root {
+  --fantasy-color: #8B1A10;
+  --classic-color: #0b00a8;
+  --text-color: black;
+  --background-color: white;
+}
+
+html {
+  font-size: 16px;
+}
+
 body {
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
@@ -41,7 +52,7 @@ li {
 }
 
 #themeSwitcher {
-  color: blue;
+  color: var(--classic-color);
   cursor: pointer;
   margin-left: 10px;
 }
@@ -120,38 +131,29 @@ li {
 }
 
 .classic h2 {
-  color: #8B1A10;
+  color: var(--fantasy-color);
 }
 
 /* Styling for fantasy theme */
 .fantasy {
-  background-color: #fcf6e0;
+  background-image: url("/assets/img/texture_parchemin.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.fantasy::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
-    repeating-linear-gradient(-45deg,
-      rgba(139, 69, 19, 0.05) 0px,
-      rgba(139, 69, 19, 0.05) 1px,
-      transparent 1px,
-      transparent 3px);
-  opacity: 0.3;
-  z-index: -1;
-  pointer-events: none;
+.fantasy #themeSwitcher {
+  color: var(--fantasy-color);
 }
 
 .fantasy .info {
   border: 2px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .fantasy .info h1 {
   font-family: "Dancing Script", cursive;
   font-size: xx-large;
-  color: #8B1A10;
+  color: var(--fantasy-color);
 }
 
 .fantasy .portrait {
@@ -164,7 +166,7 @@ li {
 .fantasy h2 {
   font-family: "Dancing Script", cursive;
   font-weight: 700;
-  color: #8B1A10;
+  color: var(--fantasy-color);
 }
 
 .sci-fi {
@@ -239,25 +241,35 @@ li {
     print-color-adjust: exact;
   }
 
-  section {
-    display: inline-block;
-    position: absolute;
-  }
-
-  #header {
-    top: 0;
-    left: 0;
-  }
-
   .info p {
     margin: 0;
   }
 
   address {
     position: absolute;
-    top: 10mm;
+    top: 13mm;
     left: 100mm;
     font-style: normal;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+  }
+
+  .print-left {
+    order: 1;
+    width: 65mm;
+    margin: 0;
+    padding: 0;
+  }
+
+  .print-right {
+    order: 2;
+    width: 124mm;
+    margin: 0;
+    padding: 0;
   }
 
   #switcher,
@@ -266,44 +278,11 @@ li {
     display: none;
   }
 
-  #jobs,
-  #education,
-  #achievements {
-    left: 70mm;
-    width: 124mm;
-  }
-
-  #jobs {
-    top: 45mm;
-  }
-
-  #education {
-    top: 130mm;
-  }
-
-  #achievements {
-    top: 180mm;
-  }
-
   #qr {
-    position: absolute;
-    display: inline-block;
-    top: 265mm;
-    left: 25mm;
-  }
-
-  #skills,
-  #assets {
-    left: 4mm;
-    width: 65mm;
-  }
-
-  #skills {
-    top: 45mm;
-  }
-
-  #assets {
-    top: 180mm;
+    display: block;
+    width: 100%;
+    margin-top: 10mm;
+    text-align: center;
   }
 
   #qr h2 {
@@ -348,16 +327,7 @@ li {
     border-bottom-right-radius: 5%;
   }
 
-  .fantasy #skills,
-  .fantasy #assets {
-    font-size: 0.9em;
-  }
-
-  .fantasy #skills {
-    top: 46mm;
-  }
-
-  .fantasy #assets {
-    top: 181mm;
+  .fantasy {
+    font-size: 0.92em;
   }
 }

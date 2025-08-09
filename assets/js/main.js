@@ -67,9 +67,9 @@ const main = async () => {
     e.preventDefault();
     let target = (e.target.tagName === 'EM') ? e.target : e.target.querySelector('em');
 
-    document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
-
     const switchIt = () => {
+       document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
+
       if (styleSwitcher.currentStyle === 'classic') {
         target.innerHTML = 'classique';
         styleSwitcher.switchStyle('fantasy');
@@ -78,6 +78,8 @@ const main = async () => {
         target.innerHTML = 'épique';
         styleSwitcher.switchStyle('classic');
       }
+      
+      document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
     };
 
     if (document.startViewTransition) {
@@ -93,9 +95,7 @@ const main = async () => {
         portrait.style.opacity = 1;
         info.style.opacity = 1;
       }, 500);
-    }
-
-    document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
+    }    
   });
 };
 
