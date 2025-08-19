@@ -24,6 +24,10 @@ export default class StyleSwitcher {
   switchData() {
     const data = this.data[this.currentLang];
 
+    //Switcher
+    const switcher = document.getElementById('themeSwitcher');
+    switcher.innerHTML = data.switcher[this.currentStyle];
+    
     //Picture
     const pictureNode = document.getElementsByClassName('portrait')[0];
     pictureNode.src = data.header.picture[this.currentStyle];
