@@ -3,9 +3,7 @@
 
 :root {
   --fantasy-color: #8B1A10;
-  --classic-color: #0b00a8;
-  --text-color: black;
-  --background-color: white;
+  --classic-color: #0047AB;
 }
 
 html {
@@ -65,8 +63,6 @@ li {
   margin-top: 10px;
   display: inline-block;
   vertical-align: top;
-  view-transition-name: portrait;
-  /* Fallback for browsers without view transitions */
   transition: opacity 0.5s ease-in-out, border 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
   opacity: 1;
 }
@@ -83,8 +79,6 @@ li {
   margin-top: 10px;
   display: inline-block;
   vertical-align: top;
-  view-transition-name: info;
-  /* Fallback for browsers without view transitions */
   transition: opacity 0.5s ease-in-out, border 0.5s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out;
   opacity: 1;
 }
@@ -102,9 +96,8 @@ li {
   cursor: pointer;
   color: white;
   font-size: 0.9em;
-  background-color: blue;
-  ;
-  border: 1px solid blue;
+  background-color: var(--classic-color);
+  border: 1px solid var(--classic-color);
   border-radius: 50%;
   padding: 0 5px;
   margin-left: 5px;
@@ -124,14 +117,32 @@ li {
 /* Styling for classic theme */
 .classic {
   background-color: white;
-}
 
-.classic .portrait {
-  object-fit: contain;
-}
+  header, h2 {
+    background-color: var(--classic-color);
+    color: white;
+  }
 
-.classic h2 {
-  color: var(--fantasy-color);
+  header {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  header .portrait {
+    order: 2;
+    object-fit: contain;
+    border-radius: 25%;
+  }
+
+  header .info {
+    order: 1;
+  }
+
+  #social h2, #qr h2 {
+    background-color: transparent;
+    color: var(--classic-color);
+  }
 }
 
 /* Styling for fantasy theme */
@@ -139,62 +150,51 @@ li {
   background-image: url("/assets/img/texture_parchemin.jpg");
   background-size: cover;
   background-attachment: fixed;
-}
 
-.fantasy #themeSwitcher {
-  color: var(--fantasy-color);
-}
+  #themeSwitcher {
+    color: var(--fantasy-color);
+  }
 
-.fantasy .info {
-  border: 2px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+  .info {
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
 
-.fantasy .info h1 {
-  font-family: "Dancing Script", cursive;
-  font-size: xx-large;
-  color: var(--fantasy-color);
-}
+  .info h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: xx-large;
+    color: var(--fantasy-color);
+  }
 
-.fantasy .portrait {
-  width: 15vw;
-  border: 2px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  object-fit: cover;
-}
+  .portrait {
+    width: 15vw;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+  }
 
-.fantasy h2 {
-  font-family: "Dancing Script", cursive;
-  font-weight: 700;
-  color: var(--fantasy-color);
+  h2 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    color: var(--fantasy-color);
+  }
 }
 
 .sci-fi {
   background-color: black;
   color: green;
-}
 
-.sci-fi .info {
-  border: 2px solid green;
-}
+  .info {
+    border: 2px solid green;
+  }
+  .portrait {
+    border: 2px solid green;
+  }
 
-.sci-fi .portrait {
-  border: 2px solid green;
-}
-
-.sci-fi h2 {
-  font-family: "Bitcount Grid Double", monospace;
-  font-weight: 300;
-}
-
-/* Theme switching transition */
-@view-transition {
-  navigation: auto;
-}
-
-::view-transition-group(portrait),
-::view-transition-group(info) {
-  animation-duration: 0.5s;
+  h2 {
+    font-family: "Bitcount Grid Double", monospace;
+    font-weight: 300;
+  }
 }
 
 /* Animation fallback */
@@ -236,9 +236,15 @@ li {
   }
 
   body {
-    min-width: 210mm;
-    min-height: 297mm;
+    width: 210mm;
+    height: 297mm;
     print-color-adjust: exact;
+  }
+
+  header {
+    width: 188mm;
+    margin: 0;
+    padding: 0;
   }
 
   .info p {
@@ -256,6 +262,8 @@ li {
     display: flex;
     flex-direction: row;
     width:100%;
+    margin: 0;
+    padding: 0;
   }
 
   .print-left {
@@ -268,7 +276,7 @@ li {
   .print-right {
     order: 2;
     width: 124mm;
-    margin: 0;
+    margin: 0 0 0 1mm;
     padding: 0;
   }
 
@@ -315,16 +323,35 @@ li {
     padding-left: 2mm;
   }
 
-  .classic #skills {
-    background: linear-gradient(340deg, rgba(255, 255, 255, 1) 50%, rgba(232, 228, 223, 1) 100%);
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
-  }
+  .classic {
+    header {
+      display: flex;
+      flex-direction: row;
+    }
 
-  .classic #assets {
-    background: linear-gradient(200deg, rgba(255, 255, 255, 1) 50%, rgba(232, 228, 223, 1) 100%);
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
+    header .portrait {
+      order: 1;
+    }
+
+    header .info {
+      order: 2;
+    }
+
+    address a {
+      text-decoration: none;
+      color: white;
+    }
+
+    #skills {
+      background: linear-gradient(340deg, rgba(255, 255, 255, 1) 50%, rgba(232, 228, 223, 1) 100%);
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;
+    }
+    #assets {
+      background: linear-gradient(200deg, rgba(255, 255, 255, 1) 50%, rgba(232, 228, 223, 1) 100%);
+      border-bottom-left-radius: 5%;
+      border-bottom-right-radius: 5%;
+    }
   }
 
   .fantasy {

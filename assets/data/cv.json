@@ -390,7 +390,7 @@
     "assets": {
       "icon": {
         "classic": "assets/img/icons/star.svg",
-        "fantasy": "assets/img/icons/star.svg",
+        "fantasy": "assets/img/icons/backpack.svg",
         "sci-fi": ""
       },
       "title": {
@@ -805,7 +805,7 @@
     "assets": {
       "icon": {
         "classic": "assets/img/icons/star.svg",
-        "fantasy": "assets/img/icons/star.svg",
+        "fantasy": "assets/img/icons/backpack.svg",
         "sci-fi": ""
       },
       "title": {
