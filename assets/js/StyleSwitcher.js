@@ -101,6 +101,10 @@ export default class StyleSwitcher {
       li.innerHTML = asset;
       assetsList.appendChild(li);
     });
+
+    // Footer
+    const foot = document.querySelector('footer p em');
+    foot.innerHTML = data['footer'];
   }
   prepareSection(nodeId, data) {
     const node = document.getElementById(nodeId);

@@ -256,6 +256,16 @@ li {
     margin: 0;
     padding: 0;
   }
+  
+  h2 sup {
+    display:inline;
+  }
+
+  footer {
+    position: absolute;
+    display: block;
+    bottom: 0;
+  }
 
   .info p {
     margin: 0;
@@ -350,15 +360,7 @@ li {
     h2 {
       padding:0;
     }
-    
-    h2 sup {
-      display:inline;
-    }
-    
-    footer {
-      display: block;
-    }
-
+  
     address a {
       text-decoration: none;
       color: white;

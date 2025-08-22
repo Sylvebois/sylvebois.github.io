@@ -62,6 +62,11 @@
       },
       "content": [
         {
+          "year": "2023",
+          "school": "Université d'Helsinki",
+          "studies": "Full Stack Open (5 ECTS cours en ligne)"
+        },
+        {
           "year": "2006-2008",
           "school": "ULiège",
           "studies": "Licence en Histoire de l'art et archéologie, orientation Antiquité"
@@ -478,6 +483,11 @@
       },
       "content": [
         {
+          "year": "2023",
+          "school": "University of Helsinki",
+          "studies": "Full Stack Open (5 ECTS online course)"
+        },
+        {
           "year": "2006-2008",
           "school": "ULiège",
           "studies": "Master in Art History and Archaeology, Antiquity orientation"
@@ -828,7 +838,7 @@
           "Ready to embark on a new mission immediately"
         ]
       }
-    }
-  },
-  "footer": "<sup>1</sup>Projects details on <strong>sylvebois.github.io</strong>"
+    },
+    "footer": "<sup>1</sup>Projects details on <strong>sylvebois.github.io</strong>"
+  }
 }
