@@ -80,9 +80,9 @@
         "sci-fi": "assets/img/icons/military_tech.svg"
       },
       "title":{
-        "classic": "Réalisations",
-        "fantasy": "Hauts-faits",
-        "sci-fi": "Accomplissements"
+        "classic": "Réalisations<sup>1</sup>",
+        "fantasy": "Hauts-faits<sup>1</sup>",
+        "sci-fi": "Accomplissements<sup>1</sup>"
       },
       "content": [
         {
@@ -412,7 +412,8 @@
           "Prêt à embarquer immédiatement pour une nouvelle mission"
         ]
       }
-    }
+    },
+    "footer": "<sup>1</sup>Détails des projets sur <strong>sylvebois.github.io</strong>"
   },
   "en": {
     "switcher": {
@@ -495,9 +496,9 @@
         "sci-fi": "assets/img/icons/military_tech.svg"
       },
       "title": {
-        "classic": "Achievements",
-        "fantasy": "Highlights",
-        "sci-fi": "Accomplishments"
+        "classic": "Achievements<sup>1</sup>",
+        "fantasy": "Highlights<sup>1</sup>",
+        "sci-fi": "Accomplishments<sup>1</sup>"
       },
       "content": [
         {
@@ -828,5 +829,6 @@
         ]
       }
     }
-  }
+  },
+  "footer": "<sup>1</sup>Projects details on <strong>sylvebois.github.io</strong>"
 }

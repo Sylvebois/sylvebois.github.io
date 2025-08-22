@@ -14,6 +14,10 @@ body {
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
+h2 sup, footer {
+  display: none;
+}
+
 li {
   padding: 5px;
 }
@@ -347,6 +351,14 @@ li {
       padding:0;
     }
     
+    h2 sup {
+      display:inline;
+    }
+    
+    footer {
+      display: block;
+    }
+
     address a {
       text-decoration: none;
       color: white;
