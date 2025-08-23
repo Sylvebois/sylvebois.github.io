@@ -33,19 +33,19 @@
           "year": "2024-2025",
           "name": "STG-Induscabel",
           "role": "IT Support Field Engineer",
-          "details": "Support informatique, amélioration de la communication entre les ERP, préparation de la migration des données vers un seul ERP, création de rapports et statistiques."
+          "details": "Amélioration de la communication entre les ERP, préparation de la migration des données vers un seul ERP, développement de rapports et tableaux de bord statistiques, support informatique."
         },
         {
           "year": "2014-2024",
           "name": "Sanidel Namur S.A.",
           "role": "RSI / Intégrateur Mercator",
-          "details": "Support informatique, mise à jour de la base de données des produits, création et gestion des catalogues et tarifs, mise en place et gestion des sites web, création de modules et adaptation de l'ERP."
+          "details": "Développement et intégration de modules ERP (C#, SQL), gestion et mise à jour de la base de données des produits, développement et maintenance des sites web de l’entreprise (PHP, JS, Wordpress), création et gestion des catalogues et tarifs, support informatique."
         },
         {
           "year": "2008-2014",
           "name": "Sanidel S.A.",
           "role": "Responsable des systèmes d’information",
-          "details": "Support informatique, mise à jour de la base de données des produits, création et gestion des catalogues et tarifs, mise en place et gestion des sites web."
+          "details": "Mise en place et gestion des sites web (PHP, JS, Drupal), suivi et amélioration du catalogue et des bases de données produits, support informatique."
         }
       ]
     },
@@ -97,7 +97,7 @@
             "fantasy": "Héraut de Mercator",
             "sci-fi": "Pilote du Mercator"
           },
-          "subtitle": "Amélioration de l'ERP",
+          "subtitle": "développement et optimisation continue",
           "details": "Création de modules et adaptation de l'ERP aux besoins des employés et de l'entreprise.",
           "list":[
             {
@@ -151,7 +151,7 @@
             "fantasy": "Gardien des données",
             "sci-fi": "Data Master"
           },
-          "subtitle": "Collecte et gestion de données",
+          "subtitle": "automatisation de la collecte et du traitement",
           "details": "Mise en place de systèmes automatiques de collecte et de gestion de données pour divers projets.",
           "list":[
             {
@@ -193,7 +193,7 @@
             "fantasy": "Tisseur de toile",
             "sci-fi": "Dans la matrice du web"
           },
-          "subtitle": "Création de sites web",
+          "subtitle": "création et maintenance de sites web",
           "details": "Création et gestion de divers site web :",
           "list":[
             {
@@ -235,7 +235,7 @@
             "fantasy": "Maître du temps",
             "sci-fi": "Chrono-mécanicien"
           },
-          "subtitle": "Création d'un Système de gestion du temps de travail",
+          "subtitle": "développement d'un outil de gestion du temps de travail",
           "details": "Création, mise en place et suivi d'un projet de pointeuse au sein de Sanidel",
           "list":[
             {
@@ -259,7 +259,7 @@
             "fantasy": "Ludomancien",
             "sci-fi": "Créateur de pixels"
           },
-          "subtitle": "Créations et expérimentations vidéoludiques",
+          "subtitle": "créations et expérimentations vidéoludiques",
           "details": "Création de jeux vidéo en 2D :",
           "list": [
             {
@@ -454,19 +454,19 @@
           "year": "2024-2025",
           "name": "STG-Induscabel",
           "role": "IT Support Field Engineer",
-          "details": "IT support, improving communication between ERPs, preparing data migration to a single ERP, creating reports and statistics."
+          "details": "Improvement of communication between ERPs, preparation of data migration to a single ERP, development of reports and statistical dashboards, IT support."
         },
         {
           "year": "2014-2024",
           "name": "Sanidel Namur S.A.",
           "role": "ISM / Mercator integrator",
-          "details": "IT support, updating product database, creating and managing catalogs and prices, setting up and managing websites, module creation and ERP adapation."
+          "details": "Development and integration of ERP modules (C#, SQL), management and updating of the product database, development and maintenance of the company's websites (PHP, JS, Wordpress), creation and management of catalogs and price lists, IT support."
         },
         {
           "year": "2008-2014",
           "name": "Sanidel S.A.",
           "role": "Information systems manager",
-          "details": "IT support, updating product database, creating and managing catalogs and prices, setting up and managing websites."
+          "details": "Setup and management of websites (PHP, JS, Drupal), monitoring and improvement of the catalog and product databases, IT support."
         }
       ]
     },
@@ -518,7 +518,7 @@
             "fantasy": "Mercator herald",
             "sci-fi": "Mercator pilot"
           },
-          "subtitle": "ERP improvement",
+          "subtitle": "continuous development and optimization",
           "details": "Creation of modules and adaptation of the ERP to the needs of employees and the company.",
           "list": [
             {
@@ -572,7 +572,7 @@
             "fantasy": "Data guardian",
             "sci-fi": "Data Master"
           },
-          "subtitle": "Data collection and management",
+          "subtitle": "automation of collecting and processing",
           "details": "Setting up automatic data collection and management systems for various projects.",
           "list": [
             {
@@ -614,7 +614,7 @@
             "fantasy": "Web weaver",
             "sci-fi": "In the web matrix"
           },
-          "subtitle": "Website creation",
+          "subtitle": "website creation and maintenance",
           "details": "Creation and management of various websites:",
           "list": [
             {
@@ -656,7 +656,7 @@
             "fantasy": "Time master",
             "sci-fi": "Chrono-mechanic"
           },
-          "subtitle": "Creation of a Work Time Management System",
+          "subtitle": "development of a work time management tool",
           "details": "Creation, implementation and follow-up of a timeclock project within Sanidel",
           "list": [
             {
@@ -680,11 +680,11 @@
             "fantasy": "Ludomancer",
             "sci-fi": "Pixel creator"
           },
-          "subtitle": "Video game creations and experiments",
+          "subtitle": "video game creation and experiments",
           "details": "Creation of 2D video games:",
           "list": [
             {
-              "name": "The apprentice mathemagician",
+              "name": "The mathemagician's apprentice",
               "description": "An educational game to practice basic mathematical operations",
               "tech": "Javascript - Phaser",
               "link": "https://github.com/Sylvebois/apprentiMathemagicien"
