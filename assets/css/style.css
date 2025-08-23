@@ -14,12 +14,36 @@ body {
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
-h2 sup, footer {
+h2 sup,
+footer {
   display: none;
 }
 
 li {
   padding: 5px;
+}
+
+address {
+  position: absolute;
+  width: 70vw;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+}
+
+address button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  border-radius: 0;
+}
+
+.hide {
+  display: none;
 }
 
 #social h2 {
@@ -42,15 +66,15 @@ li {
   padding-bottom: 5px;
 }
 
-#print {
+#switcher button {
   margin-right: 10px;
   padding: 0 5px;
   font-size: 2em;
 }
 
-#print img {
-  width: 20px;
-  height: 20px;
+#switcher button img {
+  width: 24px;
+  height: 24px;
 }
 
 #themeSwitcher {
@@ -126,7 +150,8 @@ li {
     font-weight: bold;
   }
 
-  header, h2 {
+  header,
+  h2 {
     background-color: var(--classic-color);
     color: white;
     padding: 5px;
@@ -148,7 +173,8 @@ li {
     order: 1;
   }
 
-  #social h2, #qr h2 {
+  #social h2,
+  #qr h2 {
     background-color: transparent;
     color: var(--classic-color);
   }
@@ -197,6 +223,7 @@ li {
   .info {
     border: 2px solid green;
   }
+
   .portrait {
     border: 2px solid green;
   }
@@ -249,6 +276,7 @@ li {
     width: 210mm;
     height: 297mm;
     print-color-adjust: exact;
+    font-size: 0.93em;
   }
 
   header {
@@ -256,9 +284,9 @@ li {
     margin: 0;
     padding: 0;
   }
-  
+
   h2 sup {
-    display:inline;
+    display: inline;
   }
 
   footer {
@@ -269,19 +297,29 @@ li {
 
   .info p {
     margin: 0;
+    padding: 2px;
   }
 
   address {
     position: absolute;
-    top: 13mm;
+    width: auto;
+    top: 16mm;
     left: 100mm;
+    transform: none;
     font-style: normal;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  address button {
+    display: none;
   }
 
   main {
     display: flex;
     flex-direction: row;
-    width:100%;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -358,9 +396,9 @@ li {
     }
 
     h2 {
-      padding:0;
+      padding: 0;
     }
-  
+
     address a {
       text-decoration: none;
       color: white;
@@ -371,6 +409,7 @@ li {
       border-top-left-radius: 5%;
       border-top-right-radius: 5%;
     }
+
     #assets {
       background: linear-gradient(200deg, rgba(255, 255, 255, 1) 50%, rgba(232, 228, 223, 1) 100%);
       border-bottom-left-radius: 5%;
@@ -378,7 +417,7 @@ li {
     }
   }
 
-  .fantasy {
-    font-size: 0.92em;
+  .fantasy address {
+      top:13mm;
   }
 }

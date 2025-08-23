@@ -20,17 +20,15 @@ const showDetails = e => {
 };
 
 const addContactOnPrint = () => {
-  const info = document.getElementsByClassName('info')[0];
-  const contact = document.createElement('address');
-  contact.innerHTML = '<p>\u{1F4F1} <a href="tel:+32476980231">0476 98 02 31</a></p>';
-  contact.innerHTML += '<p>\u{1F4E7} <a href="mailto:thomasghaye@hotmail.com">thomasghaye@hotmail.com</a></p>';
-  contact.innerHTML += '<p>\u{1F30E} <a href="https://sylvebois.github.io">sylvebois.github.io</a</p>'
-  info.appendChild(contact);
+  const contact = document.getElementsByTagName('address')[0];
+  if(contact.classList.contains('hide'))
+    contact.classList.toggle('hide');
 };
 
 const removeContactOnPrint = () => {
   const contact = document.getElementsByTagName('address')[0];
-  contact.remove();
+  if(!contact.classList.contains('hide'))
+    contact.classList.toggle('hide');
 };
 
 const main = async () => {
@@ -44,11 +42,16 @@ const main = async () => {
   document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
 
   const switcherDiv = document.getElementById('switcher');
+  const addressBlock = document.querySelector('address');
 
   /** Printing events */
   window.addEventListener('beforeprint', e => addContactOnPrint());
   window.addEventListener('afterprint', e => removeContactOnPrint());
   switcherDiv.querySelector('#print').addEventListener('click', e => window.print());
+
+  /** Display contact */
+  switcherDiv.querySelector('#contact').addEventListener('click', e => addressBlock.classList.toggle('hide'));
+  document.getElementById('close').addEventListener('click', e => addressBlock.classList.toggle('hide'));
 
   /** Language events */
   console.log(switcherDiv.querySelectorAll('[name="langswitcher"]'))
