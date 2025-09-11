@@ -122,7 +122,7 @@
               "name":"Présence/absence",
               "description":"Module permettant de visualiser (sur base du système de pointage) la présence ou non d'un collègue.",
               "tech":"C#",
-              "link":"https://github.com/Sylvebois/PunchingSystem/tree/master/WhosThere"
+              "link":"https://github.com/Sylvebois/PunchingSystem-public/tree/master/WhosThere"
             },
             {
               "name":"Commandes à livrer",
@@ -248,7 +248,7 @@
               "name":"Partie application",
               "description":"Création de l'application et d'un module de présence/absence intégré dans l'ERP.",
               "tech":"C#",
-              "link":"https://github.com/Sylvebois/PunchingSystem" 
+              "link":"https://github.com/Sylvebois/PunchingSystem-public/tree/master/PunchingSystem" 
             }
           ]
         },
@@ -543,7 +543,7 @@
               "name": "Presence/absence",
               "description": "Module allowing to visualize (based on the clockin system) the presence or absence of a colleague.",
               "tech": "C#",
-              "link": "https://github.com/Sylvebois/PunchingSystem/tree/master/WhosThere"
+              "link": "https://github.com/Sylvebois/PunchingSystem-public/tree/master/WhosThere"
             },
             {
               "name": "Orders to be delivered",
@@ -669,7 +669,7 @@
               "name": "Application part",
               "description": "Creation of the application and an integrated presence/absence module in the ERP.",
               "tech": "C#",
-              "link": "https://github.com/Sylvebois/PunchingSystem"
+              "link": "https://github.com/Sylvebois/PunchingSystem-public/tree/master/PunchingSystem"
             }
           ]
         },
