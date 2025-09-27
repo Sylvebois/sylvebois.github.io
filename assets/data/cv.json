@@ -62,6 +62,16 @@
       },
       "content": [
         {
+          "year": "2025",
+          "school": "Centre Secure",
+          "studies": "VCA (base)"
+        },
+        {
+          "year": "2025",
+          "school": "Zenva",
+          "studies": "C# Programming Academy (online course)"
+        },
+        {
           "year": "2023",
           "school": "Université d'Helsinki",
           "studies": "Full Stack Open (5 ECTS cours en ligne)"
@@ -482,6 +492,16 @@
         "sci-fi": "Education"
       },
       "content": [
+        {
+          "year": "2025",
+          "school": "Centre Secure",
+          "studies": "VCA (base)"
+        },
+        {
+          "year": "2025",
+          "school": "Zenva",
+          "studies": "C# Programming Academy (online course)"
+        },
         {
           "year": "2023",
           "school": "University of Helsinki",
