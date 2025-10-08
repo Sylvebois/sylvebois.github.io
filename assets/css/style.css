@@ -51,6 +51,10 @@ address button {
   margin-right: 10px;
 }
 
+#social a {
+  text-decoration: none;
+}
+
 #social img {
   max-width: 30px;
   max-height: 30px;
