@@ -46,6 +46,12 @@ address button {
   display: none;
 }
 
+#about {
+  margin-top: 5px;
+  padding: 5px;  
+  border: 1px solid black;
+}
+
 #social h2 {
   display: inline-block;
   margin-right: 10px;
@@ -356,7 +362,6 @@ address button {
   }
 
   #qr h2 {
-    display: inline-block;
     vertical-align: top;
   }
 
