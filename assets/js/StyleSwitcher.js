@@ -33,8 +33,9 @@ export default class StyleSwitcher {
     pictureNode.src = data.header.picture[this.currentStyle];
 
     // Info
-    const placeNode = document.getElementsByClassName('info')[0].querySelectorAll('p strong')[0];
-    placeNode.innerHTML = data.header.place[this.currentStyle] + ' : ';
+    const infoNode = document.getElementsByClassName('info')[0].querySelectorAll('p strong');
+    infoNode[0].innerHTML = data.header.place[this.currentStyle] + ' : ';
+    infoNode[1].innerHTML = data.header.birthday[this.currentStyle] + ' : ';
 
     // Jobs
     const jobsList = this.prepareSection('jobs', data.jobs);

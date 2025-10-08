@@ -15,6 +15,11 @@
         "classic": "Lieu de résidence",
         "fantasy": "Origine",
         "sci-fi": "Secteur de la galaxie"
+      },
+      "birthday": {
+        "classic": "Date de naissance",
+        "fantasy": "Né le",
+        "sci-fi": "Produit le"
       }
     },
     "jobs": {
@@ -446,6 +451,11 @@
         "classic": "Residence location",
         "fantasy": "Origin",
         "sci-fi": "Galaxy sector"
+      },
+      "birthday": {
+        "classic": "Birth date",
+        "fantasy": "Born",
+        "sci-fi": "Created"
       }
     },
     "jobs": {
