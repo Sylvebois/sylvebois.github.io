@@ -67,6 +67,11 @@
       },
       "content": [
         {
+          "year": "En cours",
+          "school": "Centre de compétence Technifutur",
+          "studies": "Technicien en système d'usinage"
+        },
+        {
           "year": "2025",
           "school": "Centre Secure",
           "studies": "VCA (base)"
@@ -502,6 +507,11 @@
         "sci-fi": "Education"
       },
       "content": [
+        {
+          "year": "Ongoing",
+          "school": "Technifutur skill center",
+          "studies": "Machining systems technician"
+        },
         {
           "year": "2025",
           "school": "Centre Secure",

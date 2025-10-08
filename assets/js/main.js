@@ -4,6 +4,7 @@ const calculateAge = (birthDate) => {
   const now = new Date();
   const ageDiff = now - birthDate;
   const ageDate = new Date(ageDiff);
+  console.log(ageDate, ageDiff, now, birthDate);
   return Math.abs(ageDate.getUTCFullYear() - 1970);
 };
 
@@ -37,7 +38,7 @@ const main = async () => {
   const styleSwitcher = new StyleSwitcher('fr', 'classic', data);
 
   // Calculate age and set it in the HTML
-  document.getElementById('age').textContent = calculateAge(new Date(1983, 10, 8));
+  //document.getElementById('age').textContent = calculateAge(new Date(1983, 10, 8));
 
   document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
 
