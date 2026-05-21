@@ -35,6 +35,12 @@
       },
       "content": [
         {
+          "year":"2026",
+          "name":"Wielandts UPMT",
+          "role": "Stage d'observation",
+          "details":""
+        },
+        {
           "year": "2024-2025",
           "name": "STG-Induscabel",
           "role": "IT Support Field Engineer",
@@ -69,12 +75,11 @@
         {
           "year": "En cours",
           "school": "Centre de compétence Technifutur",
-          "studies": "Technicien en systèmes d'usinage"
-        },
-        {
-          "year": "2025",
-          "school": "Centre Secure",
-          "studies": "VCA (base)"
+          "studies": "Technicien en systèmes d'usinage",
+          "certification":[
+            "<strong>2026:</strong><ul><li>Usiner des pièces par fraisage conventionnel et réaliser un montage/assemblage</li><li>Usiner en série par tournage sur machine à commande numérique et réaliser un montage/assemblage</li></ul>",
+            "<strong>2025:</strong><ul><li>VCA (base)</li></ul>"
+          ]
         },
         {
           "year": "2025",
@@ -476,6 +481,12 @@
       },
       "content": [
         {
+          "year":"2026",
+          "name":"Wielandts UPMT",
+          "role": "Internship",
+          "details":""
+        },
+        {
           "year": "2024-2025",
           "name": "STG-Induscabel",
           "role": "IT Support Field Engineer",
@@ -510,7 +521,11 @@
         {
           "year": "Ongoing",
           "school": "Technifutur skill center",
-          "studies": "Machining systems technician"
+          "studies": "Machining systems technician",
+          "certification": [            
+            "<b>2026:</b><ul><li>Machine parts using conventional milling and carry out assembly</li><li>Perform CNC turning for mass production and carry out assembly</li></ul>",
+            "<b>2025:</b><ul><li>VCA (base)</li></ul>"
+          ]
         },
         {
           "year": "2025",

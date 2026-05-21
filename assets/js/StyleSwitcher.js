@@ -50,8 +50,17 @@ export default class StyleSwitcher {
     const educList = this.prepareSection('education', data.education);
 
     data.education.content.forEach(educ => {
+      console.log(educ)
+      let certif = '';
+      
+      if(educ.certification) {
+        certif += '<ul>';
+        educ.certification.forEach(cert => certif += `<li>${cert}</li>`)
+        certif +='</ul>';
+      }
+
       const li = document.createElement('li');
-      li.innerHTML = `<strong>${educ.year}</strong> - ${educ.school}<br><em>${educ.studies}</em>`;
+      li.innerHTML = `<strong>${educ.year}</strong> - ${educ.school}<br><em>${educ.studies}${certif}</em>`;
       educList.appendChild(li);
     });
 
