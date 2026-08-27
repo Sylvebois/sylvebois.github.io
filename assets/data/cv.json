@@ -77,7 +77,7 @@
           "school": "Centre de compétence Technifutur",
           "studies": "Technicien en systèmes d'usinage",
           "certification":[
-            "<strong>2026:</strong><ul><li>Usiner des pièces par fraisage conventionnel et réaliser un montage/assemblage</li><li>Usiner en série par tournage sur machine à commande numérique et réaliser un montage/assemblage</li></ul>",
+            "<strong>2026:</strong><ul><li>Usiner des pièces par tournage conventionnel et réaliser un montage/assemblage</li><li>Usiner des pièces par fraisage conventionnel et réaliser un montage/assemblage</li><li>Usiner en série par tournage sur machine à commande numérique et réaliser un montage/assemblage</li><li>Usiner en série par fraisage sur machine à commande numérique et réaliser un montage/assemblage</li></ul>",
             "<strong>2025:</strong><ul><li>VCA (base)</li></ul>"
           ]
         },
@@ -523,7 +523,7 @@
           "school": "Technifutur skill center",
           "studies": "Machining systems technician",
           "certification": [            
-            "<b>2026:</b><ul><li>Machine parts using conventional milling and carry out assembly</li><li>Perform CNC turning for mass production and carry out assembly</li></ul>",
+            "<b>2026:</b><ul><li>Machine parts using conventional turning and carry out assembly</li><li>Machine parts using conventional milling and carry out assembly</li><li>Perform CNC turning for mass production and carry out assembly</li><li>Perform CNC milling for mass production and carry out assembly</li></ul>",
             "<b>2025:</b><ul><li>VCA (base)</li></ul>"
           ]
         },
