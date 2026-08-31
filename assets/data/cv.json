@@ -214,6 +214,10 @@
             "fantasy": "Gardien des données",
             "sci-fi": "Data Master"
           },
+          "tags": [
+            "all",
+            "it"
+          ],
           "subtitle": "automatisation de la collecte et du traitement",
           "details": "Mise en place de systèmes automatiques de collecte et de gestion de données pour divers projets.",
           "list": [
@@ -256,6 +260,10 @@
             "fantasy": "Tisseur de toile",
             "sci-fi": "Dans la matrice du web"
           },
+          "tags": [
+            "all",
+            "it"
+          ],
           "subtitle": "création et maintenance de sites web",
           "details": "Création et gestion de divers site web :",
           "list": [
@@ -298,6 +306,11 @@
             "fantasy": "Maître du temps",
             "sci-fi": "Chrono-mécanicien"
           },
+          "tags": [
+            "all",
+            "it",
+            "usi"
+          ],
           "subtitle": "développement d'un outil de gestion du temps de travail",
           "details": "Création, mise en place et suivi d'un projet de pointeuse au sein de Sanidel",
           "list": [
@@ -322,6 +335,10 @@
             "fantasy": "Ludomancien",
             "sci-fi": "Créateur de pixels"
           },
+          "tags": [
+            "all",
+            "it"
+          ],
           "subtitle": "créations et expérimentations vidéoludiques",
           "details": "Création de jeux vidéo en 2D :",
           "list": [
@@ -605,12 +622,50 @@
       },
       "content": [
         {
+          "year": "2026",
+          "name": {
+            "classic": "Monitor stand",
+            "fantasy": "Monitor stand",
+            "sci-fi": "Monitor stand"
+          },
+          "tags": [
+            "all",
+            "usi"
+          ],
+          "subtitle": "design, machining, and assembly",
+          "details": "Manufacturing of a three-part aluminum mount (base, bar, and VESA mount) using a CNC lathe and a CNC milling machine.",
+          "list": [
+            {
+              "name": "CAD Design",
+              "description": "Creation of plans and 3D renderings for the three elements",
+              "tech": "FreeCAD",
+              "link": ""
+            },
+            {
+              "name": "Programming",
+              "description": "Toolpath generation",
+              "tech": "G-Code, MasterCAM",
+              "link": ""
+            },
+            {
+              "name": "Machining",
+              "description": "Machining parts from aluminum stocks",
+              "tech": "CNC lathe (Haas), CNC mill (Fanuc et Siemens)",
+              "link": ""
+            }
+          ]
+        },
+        {
           "year": "2008-2025",
           "name": {
             "classic": "ERP - Mercator",
             "fantasy": "Mercator herald",
             "sci-fi": "Mercator pilot"
           },
+          "tags": [
+            "all",
+            "it"
+          ],
           "subtitle": "continuous development and optimization",
           "details": "Creation of modules and adaptation of the ERP to the needs of employees and the company.",
           "list": [
@@ -665,6 +720,10 @@
             "fantasy": "Data guardian",
             "sci-fi": "Data Master"
           },
+          "tags": [
+            "all",
+            "it"
+          ],
           "subtitle": "automation of collecting and processing",
           "details": "Setting up automatic data collection and management systems for various projects.",
           "list": [
@@ -707,6 +766,10 @@
             "fantasy": "Web weaver",
             "sci-fi": "In the web matrix"
           },
+          "tags": [
+            "all",
+            "it"
+          ],
           "subtitle": "website creation and maintenance",
           "details": "Creation and management of various websites:",
           "list": [
@@ -749,6 +812,11 @@
             "fantasy": "Time master",
             "sci-fi": "Chrono-mechanic"
           },
+          "tags": [
+            "all",
+            "it",
+            "usi"
+          ],
           "subtitle": "development of a work time management tool",
           "details": "Creation, implementation and follow-up of a timeclock project within Sanidel",
           "list": [
@@ -773,6 +841,10 @@
             "fantasy": "Ludomancer",
             "sci-fi": "Pixel creator"
           },
+          "tags": [
+            "all",
+            "it"
+          ],
           "subtitle": "video game creation and experiments",
           "details": "Creation of 2D video games:",
           "list": [

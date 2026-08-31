@@ -35,7 +35,7 @@ const removeContactOnPrint = () => {
 const main = async () => {
   const response = await fetch('assets/data/cv.json');
   const data = await response.json();
-  const styleSwitcher = new StyleSwitcher('fr', 'classic', data);
+  const styleSwitcher = new StyleSwitcher('fr', 'classic', 'all', data);
 
   // Calculate age and set it in the HTML
   //document.getElementById('age').textContent = calculateAge(new Date(1983, 10, 8));
@@ -55,12 +55,22 @@ const main = async () => {
   document.getElementById('close').addEventListener('click', e => addressBlock.classList.toggle('hide'));
 
   /** Language events */
-  console.log(switcherDiv.querySelectorAll('[name="langswitcher"]'))
   switcherDiv.querySelectorAll('[name="langswitcher"]').forEach(radio => {
     radio.addEventListener('change', e => {
       if (e.target.checked) {
         document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
-        styleSwitcher.switchLanguage(e.target.value.toLowerCase())
+        styleSwitcher.switchLanguage(e.target.value.toLowerCase());
+        document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
+      }
+    });
+  });
+
+  /** CV Type events */
+  switcherDiv.querySelectorAll('[name="cvType"]').forEach(radio => {
+    radio.addEventListener('change', e => {
+      if(e.target.checked) {
+        document.querySelectorAll('.viewmore').forEach(elem => elem.removeEventListener('click', showDetails));
+        styleSwitcher.switchCVType(e.target.value.toLowerCase());
         document.querySelectorAll('.viewmore').forEach(elem => elem.addEventListener('click', showDetails));
       }
     });

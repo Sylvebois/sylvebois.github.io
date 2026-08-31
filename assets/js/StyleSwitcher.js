@@ -1,7 +1,8 @@
 export default class StyleSwitcher {
-  constructor(lang, style, data) {
+  constructor(lang, style, tag, data) {
     this.currentLang = lang;
     this.currentStyle = style;
+    this.currentTag = tag;
     this.data = data;
     this.init();
   }
@@ -24,6 +25,10 @@ export default class StyleSwitcher {
     this.switchData();
     document.querySelector('body').className = style.toLowerCase();
     console.log(`Style switched to: ${this.currentStyle}`);
+  }
+  switchCVType(tag) {
+    this.currentTag = tag;
+    this.switchData();
   }
   switchData() {
     const data = this.data[this.currentLang];
@@ -72,22 +77,24 @@ export default class StyleSwitcher {
     const achievementsList = this.prepareSection('achievements', data.achievements);
 
     data.achievements.content.forEach(achievement => {
-      let detailledList = '';
+      if (achievement.tags.includes(this.currentTag)) {
+        let detailledList = '';
 
-      if (achievement.list && achievement.list.length > 0) {
-        detailledList = '<ul>';
-        achievement.list.forEach(item => {
-          let title = item.link ? `<a href="${item.link}" target="_blank">${item.name}</a>` : item.name;
-          detailledList += `<li>${title} : ${item.description} -- ${item.tech}</li>`;
-        });
-        detailledList += '</ul>';
+        if (achievement.list && achievement.list.length > 0) {
+          detailledList = '<ul>';
+          achievement.list.forEach(item => {
+            let title = item.link ? `<a href="${item.link}" target="_blank">${item.name}</a>` : item.name;
+            detailledList += `<li>${title} : ${item.description} -- ${item.tech}</li>`;
+          });
+          detailledList += '</ul>';
+        }
+
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${achievement.year}</strong> - ${achievement.name[this.currentStyle]} (${achievement.subtitle}) <span class="viewmore">i</span>`;
+        li.innerHTML += `<div class="closed">${achievement.details}${detailledList}</div>`;
+
+        achievementsList.appendChild(li);
       }
-
-      const li = document.createElement('li');
-      li.innerHTML = `<strong>${achievement.year}</strong> - ${achievement.name[this.currentStyle]} (${achievement.subtitle}) <span class="viewmore">i</span>`;
-      li.innerHTML += `<div class="closed">${achievement.details}${detailledList}</div>`;
-
-      achievementsList.appendChild(li);
     });
 
     // Skills
