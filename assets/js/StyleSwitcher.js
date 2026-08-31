@@ -11,6 +11,10 @@ export default class StyleSwitcher {
   }
   switchLanguage(lang) {
     this.currentLang = lang;
+
+    let usiLabel = document.querySelector('label[for="usi"] ');
+    usiLabel.firstChild.nextSibling.textContent = (this.currentLang === 'en') ? 'Machinist' : 'Usineur';
+
     this.switchData();
     document.querySelector('html').lang = lang.toLowerCase();
     console.log(`Language switched to: ${this.currentLang}`);
@@ -27,7 +31,7 @@ export default class StyleSwitcher {
     //Switcher
     const switcher = document.getElementById('themeSwitcher');
     switcher.innerHTML = data.switcher[this.currentStyle];
-    
+
     //Picture
     const pictureNode = document.getElementsByClassName('portrait')[0];
     pictureNode.src = data.header.picture[this.currentStyle];
@@ -52,11 +56,11 @@ export default class StyleSwitcher {
     data.education.content.forEach(educ => {
       console.log(educ)
       let certif = '';
-      
-      if(educ.certification) {
+
+      if (educ.certification) {
         certif += '<ul>';
         educ.certification.forEach(cert => certif += `<li>${cert}</li>`)
-        certif +='</ul>';
+        certif += '</ul>';
       }
 
       const li = document.createElement('li');
