@@ -5,7 +5,7 @@
       "fantasy": "Vous cherchez quelque chose de plus <em>classique</em> ?",
       "sci-fi": "Vous cherchez quelque chose de plus <em>classique</em> ?"
     },
-    "header":{
+    "header": {
       "picture": {
         "classic": "assets/img/photo_cv.jpg",
         "fantasy": "assets/img/rodeur_fantasy_encre_remix.jpg",
@@ -35,10 +35,10 @@
       },
       "content": [
         {
-          "year":"2026",
-          "name":"Wielandts UPMT",
+          "year": "2026",
+          "name": "Wielandts UPMT",
           "role": "Stage d'observation",
-          "details":""
+          "details": ""
         },
         {
           "year": "2024-2025",
@@ -66,17 +66,17 @@
         "fantasy": "assets/img/icons/dictionary.svg",
         "sci-fi": ""
       },
-      "title":{
-        "classic":"Formations",
-        "fantasy":"Initiations académiques",
-        "sci-fi":"Formations"
+      "title": {
+        "classic": "Formations",
+        "fantasy": "Initiations académiques",
+        "sci-fi": "Formations"
       },
       "content": [
         {
           "year": "En cours",
           "school": "Centre de compétence Technifutur",
           "studies": "Technicien en systèmes d'usinage",
-          "certification":[
+          "certification": [
             "<strong>2026:</strong><ul><li>Usiner des pièces par tournage conventionnel et réaliser un montage/assemblage</li><li>Usiner des pièces par fraisage conventionnel et réaliser un montage/assemblage</li><li>Usiner en série par tournage sur machine à commande numérique et réaliser un montage/assemblage</li><li>Usiner en série par fraisage sur machine à commande numérique et réaliser un montage/assemblage</li></ul>",
             "<strong>2025:</strong><ul><li>VCA (base)</li></ul>"
           ]
@@ -109,12 +109,46 @@
         "fantasy": "assets/img/icons/bookmark_star.svg",
         "sci-fi": "assets/img/icons/military_tech.svg"
       },
-      "title":{
+      "title": {
         "classic": "Réalisations<sup>1</sup>",
         "fantasy": "Hauts-faits<sup>1</sup>",
         "sci-fi": "Accomplissements<sup>1</sup>"
       },
       "content": [
+        {
+          "year": "2026",
+          "name": {
+            "classic": "Support d'écran",
+            "fantasy": "Support d'écran",
+            "sci-fi": "Support d'écran"
+          },
+          "tags": [
+            "all",
+            "usi"
+          ],
+          "subtitle": "conception, usinage et assemblage",
+          "details": "Réalisation d'un support en aluminum en trois partie (socle, barre et fixation Vesa) sur un tour et une fraiseuse CN.",
+          "list": [
+            {
+              "name": "Conception DAO",
+              "description": "Réalisation des plans pour les trois éléments",
+              "tech": "FreeCAD",
+              "link": ""
+            },
+            {
+              "name": "Programmation",
+              "description": "Réalisation des parcours d'outils",
+              "tech": "G-Code, MasterCAM",
+              "link": ""
+            },
+            {
+              "name": "Usinage",
+              "description": "Réalisation des pièces à partir de brut en aluminium",
+              "tech": "Tour CN (Haas), Fraiseuse CN (Fanuc et Siemens)",
+              "link": ""
+            }
+          ]
+        },
         {
           "year": "2008-2025",
           "name": {
@@ -122,50 +156,54 @@
             "fantasy": "Héraut de Mercator",
             "sci-fi": "Pilote du Mercator"
           },
+          "tags": [
+            "all",
+            "it"
+          ],
           "subtitle": "développement et optimisation continue",
           "details": "Création de modules et adaptation de l'ERP aux besoins des employés et de l'entreprise.",
-          "list":[
+          "list": [
             {
-              "name":"Exploration des données d'autres ERP",
-              "description":"Module simplifiant la création d'articles dans Mercator en utilisant les données des autres ERP du groupe.",
-              "tech":"C#",
-              "link":"https://github.com/Sylvebois/mercatorWidgets/tree/master/ExploreProductsData"
+              "name": "Exploration des données d'autres ERP",
+              "description": "Module simplifiant la création d'articles dans Mercator en utilisant les données des autres ERP du groupe.",
+              "tech": "C#",
+              "link": "https://github.com/Sylvebois/mercatorWidgets/tree/master/ExploreProductsData"
             },
             {
-              "name":"Etiquettes de livraison Sendcloud",
-              "description":"Module permettant la création et l'impression d'une étiquette pour un envoi de colis via la plateforme Sendcloud.",
-              "tech":"C#",
-              "link":""
+              "name": "Etiquettes de livraison Sendcloud",
+              "description": "Module permettant la création et l'impression d'une étiquette pour un envoi de colis via la plateforme Sendcloud.",
+              "tech": "C#",
+              "link": ""
             },
             {
-              "name":"Chat intégré",
-              "description":"Module d'envoi de messages courts intégré directement dans l'ERP.",
-              "tech":"C#",
-              "link":""
+              "name": "Chat intégré",
+              "description": "Module d'envoi de messages courts intégré directement dans l'ERP.",
+              "tech": "C#",
+              "link": ""
             },
             {
-              "name":"Présence/absence",
-              "description":"Module permettant de visualiser (sur base du système de pointage) la présence ou non d'un collègue.",
-              "tech":"C#",
-              "link":"https://github.com/Sylvebois/PunchingSystem-public/tree/master/WhosThere"
+              "name": "Présence/absence",
+              "description": "Module permettant de visualiser (sur base du système de pointage) la présence ou non d'un collègue.",
+              "tech": "C#",
+              "link": "https://github.com/Sylvebois/PunchingSystem-public/tree/master/WhosThere"
             },
             {
-              "name":"Commandes à livrer",
-              "description":"Module listant les commandes devant être livrées le lendemain en fonction du magasin et de la demande du client.",
-              "tech":"C#",
-              "link":"https://github.com/Sylvebois/mercatorWidgets/tree/master/NextDayLiv"
+              "name": "Commandes à livrer",
+              "description": "Module listant les commandes devant être livrées le lendemain en fonction du magasin et de la demande du client.",
+              "tech": "C#",
+              "link": "https://github.com/Sylvebois/mercatorWidgets/tree/master/NextDayLiv"
             },
             {
-              "name":"Module de gestion des tâches",
-              "description":"Module permettant de gérer les tâches à réaliser par les employés.",
-              "tech":"C#",
-              "link":""
+              "name": "Module de gestion des tâches",
+              "description": "Module permettant de gérer les tâches à réaliser par les employés.",
+              "tech": "C#",
+              "link": ""
             },
             {
-              "name":"Module de gestion des commandes",
-              "description":"Module permettant de gérer les commandes des clients.",
-              "tech":"C#",
-              "link":""
+              "name": "Module de gestion des commandes",
+              "description": "Module permettant de gérer les commandes des clients.",
+              "tech": "C#",
+              "link": ""
             }
           ]
         },
@@ -178,36 +216,36 @@
           },
           "subtitle": "automatisation de la collecte et du traitement",
           "details": "Mise en place de systèmes automatiques de collecte et de gestion de données pour divers projets.",
-          "list":[
+          "list": [
             {
-              "name":"Campagne marketing SMS",
-              "description":"Envoi d'un sms publicitaire sur base d'un listing de numéros.",
-              "tech":"NodeJS, SMPP",
-              "link":""
+              "name": "Campagne marketing SMS",
+              "description": "Envoi d'un sms publicitaire sur base d'un listing de numéros.",
+              "tech": "NodeJS, SMPP",
+              "link": ""
             },
             {
-              "name":"Synchronisation entre ERP",
-              "description":"Synchronisation quotidienne des données clients, de l'état des commandes et des statistiques de vente entre les différents ERP du groupe.",
-              "tech":"SQL Serveur, Excel, PHP",
-              "link":""
+              "name": "Synchronisation entre ERP",
+              "description": "Synchronisation quotidienne des données clients, de l'état des commandes et des statistiques de vente entre les différents ERP du groupe.",
+              "tech": "SQL Serveur, Excel, PHP",
+              "link": ""
             },
             {
-              "name":"Adaptation CSV",
-              "description":"Adaptation de fichiers de produits pour import dans l'ERP.",
-              "tech":"NodeJS",
-              "link":""
+              "name": "Adaptation CSV",
+              "description": "Adaptation de fichiers de produits pour import dans l'ERP.",
+              "tech": "NodeJS",
+              "link": ""
             },
             {
-              "name":"Webscraping e-commerce",
-              "description":"Application de collecte de données produits à des fins de comparaison avec nos propres produits.",
-              "tech":"NodeJS, Puppeteer",
-              "link":""
+              "name": "Webscraping e-commerce",
+              "description": "Application de collecte de données produits à des fins de comparaison avec nos propres produits.",
+              "tech": "NodeJS, Puppeteer",
+              "link": ""
             },
             {
-              "name":"Synchronisation entre ERP et site e-commerce",
-              "description":"Communication des documents clients et données produits entre l'ERP et le site e-commerce.",
-              "tech":"SQL Serveur, MySQL, PHP",
-              "link":""
+              "name": "Synchronisation entre ERP et site e-commerce",
+              "description": "Communication des documents clients et données produits entre l'ERP et le site e-commerce.",
+              "tech": "SQL Serveur, MySQL, PHP",
+              "link": ""
             }
           ]
         },
@@ -220,36 +258,36 @@
           },
           "subtitle": "création et maintenance de sites web",
           "details": "Création et gestion de divers site web :",
-          "list":[
+          "list": [
             {
               "name": "www.bemush.eu",
               "description": "Expérimentation de site marketplace",
               "tech": "Drupal",
-              "link":"https://web.archive.org/web/20210507024151/https://www.cuisine-concept.be/"
+              "link": "https://web.archive.org/web/20210507024151/https://www.cuisine-concept.be/"
             },
             {
               "name": "www.cuisine-concept.be",
               "description": "Site vitrine (monopage) de Cuisine Concept",
               "tech": "HTML, CSS, JavaScript",
-              "link":"https://web.archive.org/web/20210507024151/https://www.cuisine-concept.be/"
+              "link": "https://web.archive.org/web/20210507024151/https://www.cuisine-concept.be/"
             },
             {
               "name": "www.sanidel.be",
               "description": "Site B2C de Sanidel Namur",
               "tech": "WordPress",
-              "link":"https://web.archive.org/web/20240825201035/https://www.sanidel.be/"
+              "link": "https://web.archive.org/web/20240825201035/https://www.sanidel.be/"
             },
             {
               "name": "www.sanidel.eu",
               "description": "Site e-commerce B2B de Sanidel (avec progressive web app)",
               "tech": "HTML, CSS, JavaScript, PHP",
-              "link":"https://web.archive.org/web/20240229004530/https://sanidel.eu/"
+              "link": "https://web.archive.org/web/20240229004530/https://sanidel.eu/"
             },
             {
               "name": "www.sanidel.com",
               "description": "Site B2C de Sanidel Marche-en-Famenne",
               "tech": "Drupal",
-              "link":"https://web.archive.org/web/20130619161549/http://sanidel.com/"
+              "link": "https://web.archive.org/web/20130619161549/http://sanidel.com/"
             }
           ]
         },
@@ -262,18 +300,18 @@
           },
           "subtitle": "développement d'un outil de gestion du temps de travail",
           "details": "Création, mise en place et suivi d'un projet de pointeuse au sein de Sanidel",
-          "list":[
+          "list": [
             {
-              "name":"Partie hardware",
-              "description":"Assemblage et programmation des composants, liaison avec la base de données et utilisation de cartes NFC.",
-              "tech":"FreeCAD, Python",
-              "link":"https://www.linkedin.com/in/tghaye/details/projects/1931263295/multiple-media-viewer/?profileId=ACoAAAShMGgBYZpJtjt6EaFr15QQdm-EvkuNMvo&treasuryMediaId=1635533378777"
+              "name": "Partie hardware",
+              "description": "Assemblage et programmation des composants, liaison avec la base de données et utilisation de cartes NFC.",
+              "tech": "FreeCAD, Python",
+              "link": "https://www.linkedin.com/in/tghaye/details/projects/1931263295/multiple-media-viewer/?profileId=ACoAAAShMGgBYZpJtjt6EaFr15QQdm-EvkuNMvo&treasuryMediaId=1635533378777"
             },
             {
-              "name":"Partie application",
-              "description":"Création de l'application et d'un module de présence/absence intégré dans l'ERP.",
-              "tech":"C#",
-              "link":"https://github.com/Sylvebois/PunchingSystem-public/tree/master/PunchingSystem" 
+              "name": "Partie application",
+              "description": "Création de l'application et d'un module de présence/absence intégré dans l'ERP.",
+              "tech": "C#",
+              "link": "https://github.com/Sylvebois/PunchingSystem-public/tree/master/PunchingSystem"
             }
           ]
         },
@@ -291,27 +329,27 @@
               "name": "L'apprenti mathémagicien",
               "description": "Un jeu éducatif pour s'entrainer aux opérations mathématiques de base",
               "tech": "Javascript - Phaser",
-              "link":"https://github.com/Sylvebois/apprentiMathemagicien"
+              "link": "https://github.com/Sylvebois/apprentiMathemagicien"
             },
             {
               "name": "Timeline",
               "description": "Un portage du jeu de carte éponyme",
               "tech": "Javascript - Phaser",
-              "link":"https://github.com/Sylvebois/Timeline"
+              "link": "https://github.com/Sylvebois/Timeline"
             },
             {
               "name": "Run Plombo Run",
               "description": "Un endless runner avec la mascotte de l'entreprise",
               "tech": "Javascript - Phaser",
-              "link":"https://github.com/Sylvebois/run-plombo-run"
+              "link": "https://github.com/Sylvebois/run-plombo-run"
             },
             {
               "name": "Scroll of Stupidity",
               "description": "Un jeu de rôle un peu décalé",
               "tech": "Javascript",
-              "link":"https://github.com/Sylvebois/MyFirstRPG/tree/vanilla-reboot"
+              "link": "https://github.com/Sylvebois/MyFirstRPG/tree/vanilla-reboot"
             }
-        ]
+          ]
         }
       ]
     },
@@ -481,10 +519,10 @@
       },
       "content": [
         {
-          "year":"2026",
-          "name":"Wielandts UPMT",
+          "year": "2026",
+          "name": "Wielandts UPMT",
           "role": "Internship",
-          "details":""
+          "details": ""
         },
         {
           "year": "2024-2025",
@@ -522,7 +560,7 @@
           "year": "Ongoing",
           "school": "Technifutur skill center",
           "studies": "Machining systems technician",
-          "certification": [            
+          "certification": [
             "<b>2026:</b><ul><li>Machine parts using conventional turning and carry out assembly</li><li>Machine parts using conventional milling and carry out assembly</li><li>Perform CNC turning for mass production and carry out assembly</li><li>Perform CNC milling for mass production and carry out assembly</li></ul>",
             "<b>2025:</b><ul><li>VCA (base)</li></ul>"
           ]
