@@ -349,6 +349,10 @@ address button {
     padding: 0;
   }
 
+  #achievements {
+    display: none;
+  }
+
   #switcher,
   #social,
   .viewmore {
