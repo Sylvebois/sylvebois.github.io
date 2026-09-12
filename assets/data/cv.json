@@ -131,7 +131,7 @@
           "list": [
             {
               "name": "Conception DAO",
-              "description": "Réalisation des plans pour les trois éléments",
+              "description": "Réalisation des plans et vues 3D pour les trois éléments",
               "tech": "FreeCAD",
               "link": ""
             },
@@ -145,7 +145,7 @@
               "name": "Usinage",
               "description": "Réalisation des pièces à partir de brut en aluminium",
               "tech": "Tour CN (Haas), Fraiseuse CN (Fanuc et Siemens)",
-              "link": "https://media.licdn.com/dms/image/v2/D4E2DAQFBBGoMAOkgEg/profile-treasury-image-shrink_800_800/B4EaA_UhK_HEAI-/0/1787768739149?e=1789027200&v=beta&t=caKc4N5nyTG-mwxixB8BgaLWIR9-o0dnGakPXEhKIHM"
+              "link": "https://raw.githubusercontent.com/Sylvebois/sylvebois.github.io/refs/heads/main/assets/img/support_ecran.jpg"
             }
           ]
         },
@@ -318,7 +318,7 @@
               "name": "Partie hardware",
               "description": "Assemblage et programmation des composants, liaison avec la base de données et utilisation de cartes NFC.",
               "tech": "FreeCAD, Python",
-              "link": "https://media.licdn.com/dms/image/v2/D4E2DAQG-6VKJDjX-qA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1689760577260?e=1789027200&v=beta&t=8hQ36WbBWNWQaYqtkS7hu82yY_ukVbwy8v6j2u7Y27A"
+              "link": "https://raw.githubusercontent.com/Sylvebois/sylvebois.github.io/refs/heads/main/assets/img/pointeuse_in.jpeg"
             },
             {
               "name": "Partie application",
@@ -510,7 +510,7 @@
       "content": {
         "classic": [
           "Permis de conduire B",
-          "Disponible immédiatement"
+          "Disponible rapidement"
         ],
         "fantasy": [
           "Monture personnelle (Permis B)",
@@ -675,7 +675,7 @@
               "name": "Machining",
               "description": "Machining parts from aluminum stocks",
               "tech": "CNC lathe (Haas), CNC mill (Fanuc et Siemens)",
-              "link": "https://media.licdn.com/dms/image/v2/D4E2DAQFBBGoMAOkgEg/profile-treasury-image-shrink_800_800/B4EaA_UhK_HEAI-/0/1787768739149?e=1789027200&v=beta&t=caKc4N5nyTG-mwxixB8BgaLWIR9-o0dnGakPXEhKIHM"
+              "link": "https://raw.githubusercontent.com/Sylvebois/sylvebois.github.io/refs/heads/main/assets/img/support_ecran.jpg"
             }
           ]
         },
@@ -848,7 +848,7 @@
               "name": "Hardware part",
               "description": "Assembly and programming of components, linking with the database and use of NFC cards.",
               "tech": "FreeCAD, Python",
-              "link": "https://media.licdn.com/dms/image/v2/D4E2DAQG-6VKJDjX-qA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1689760577260?e=1789027200&v=beta&t=8hQ36WbBWNWQaYqtkS7hu82yY_ukVbwy8v6j2u7Y27A"
+              "link": "https://raw.githubusercontent.com/Sylvebois/sylvebois.github.io/refs/heads/main/assets/img/pointeuse_in.jpeg"
             },
             {
               "name": "Application part",
@@ -1040,7 +1040,7 @@
       "content": {
         "classic": [
           "Driver's license B",
-          "Available immediately"
+          "Available quickly"
         ],
         "fantasy": [
           "Personal mount (Driver's license B)",

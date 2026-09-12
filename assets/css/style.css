@@ -306,16 +306,6 @@ address button {
     padding: 0;
   }
 
-  h2 sup {
-    display: inline;
-  }
-
-  footer {
-    position: absolute;
-    display: block;
-    bottom: 0;
-  }
-
   .info p {
     margin: 0;
     padding: 2px;
@@ -428,6 +418,10 @@ address button {
       background: linear-gradient(340deg, rgba(255, 255, 255, 1) 50%, rgba(232, 228, 223, 1) 100%);
       border-top-left-radius: 5%;
       border-top-right-radius: 5%;
+    }
+
+    #skills ul li ul li {
+      padding: 0.5mm;
     }
 
     #assets {
