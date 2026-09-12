@@ -602,7 +602,7 @@
           "school": "Technifutur skill center",
           "studies": "Machining systems technician",
           "certification": [
-            "<b>2026:</b><ul><li>Machine parts using conventional turning and carry out assembly</li><li>Machine parts using conventional milling and carry out assembly</li><li>Perform CNC turning for mass production and carry out assembly</li><li>Perform CNC milling for mass production and carry out assembly</li></ul>",
+            "<b>2026:</b><ul><li>Machine parts using conventional turning/milling and carry out assembly</li><li>Perform CNC turning/milling for mass production and carry out assembly</li></ul>",
             "<b>2025:</b><ul><li>VCA (base)</li></ul>"
           ]
         },
